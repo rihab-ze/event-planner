@@ -2,7 +2,7 @@ Class extends DataClass
 
 
 exposed Function getCurrentUser()->$employee : cs:C1710.EmployeeEntity
-	$employee:=This:C1470.get(Session:C1714.storage.payLoad.UUID)
+	$employee:=This:C1470.get(Session:C1714.storage.payload.ID)
 	
 exposed Function saveSearch($search : Variant)
 	Use (Session:C1714.storage)
