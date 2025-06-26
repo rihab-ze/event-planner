@@ -1,0 +1,211 @@
+{
+	"Shared": [
+		{
+			"id": "currentUser",
+			"type": "entity",
+			"dataclass": "Employee",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "events",
+			"type": "entitysel",
+			"dataclass": "Event",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "selectedSponsor",
+			"type": "entity",
+			"dataclass": "Sponsor",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "selectedStand",
+			"type": "entity",
+			"dataclass": "Stand",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null,
+			"events": []
+		},
+		{
+			"id": "dashSponsors",
+			"type": "entitysel",
+			"dataclass": "Sponsor",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "dashEvents",
+			"type": "entitysel",
+			"dataclass": "Event",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "dashStands",
+			"type": "entitysel",
+			"dataclass": "Stand",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "dashCompanies",
+			"type": "entitysel",
+			"dataclass": "Company",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "dashSessions",
+			"type": "entitysel",
+			"dataclass": "Session",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "selectedEvent",
+			"type": "entity",
+			"dataclass": "Event",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": "",
+			"events": []
+		},
+		{
+			"id": "selectedCompany",
+			"type": "entity",
+			"dataclass": "Company",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null,
+			"events": []
+		},
+		{
+			"id": "selectedSession",
+			"type": "entity",
+			"dataclass": "Session",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null,
+			"events": []
+		},
+		{
+			"id": "dashEmployees",
+			"type": "entitysel",
+			"dataclass": "Employee",
+			"namespace": "Shared",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100,
+			"events": []
+		},
+		{
+			"id": "selectedEmployee",
+			"type": "entity",
+			"dataclass": "Employee",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null,
+			"events": []
+		},
+		{
+			"id": "userPage",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		},
+		{
+			"id": "selectedEventActor",
+			"type": "entity",
+			"dataclass": "EventActor",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "selectedTechnician",
+			"type": "entity",
+			"dataclass": "Technician",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "selectedSpeaker",
+			"type": "entity",
+			"dataclass": "Speaker",
+			"namespace": "Shared",
+			"initialValue": "",
+			"depth": null
+		},
+		{
+			"id": "dropUUID",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		},
+		{
+			"id": "dropDc",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		},
+		{
+			"id": "modalDc",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		},
+		{
+			"id": "sharedUUID",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		},
+		{
+			"id": "employeeEvents",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "array",
+			"initialValue": []
+		},
+		{
+			"id": "selectedev",
+			"type": "entity",
+			"dataclass": "Event",
+			"from": "events",
+			"namespace": "Shared",
+			"initialValue": "first",
+			"depth": null
+		},
+		{
+			"id": "publicAccess",
+			"type": "scalar",
+			"namespace": "Shared",
+			"dataType": "string",
+			"initialValue": ""
+		}
+	]
+}

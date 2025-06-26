@@ -1,0 +1,628 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "landingPage",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			}
+		],
+		"styles": [
+			{
+				"name": "demoButton",
+				"content": "self {\n\tcursor: pointer;\n  \tbackground-image: linear-gradient(to right, #cc75ca , #6a36ca);\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
+				"parentId": null,
+				"id": "0EWD1JaQLR1KVohcKu0Nz",
+				"scope": "local"
+			},
+			{
+				"name": "demoButton2",
+				"content": "self {\n\tcursor: pointer;\n  \tbackground-image: linear-gradient(to right, #6a36ca ,rgb(88, 99, 246));\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "fJAmpdtGmbsmUUIeu-WaM"
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onload"
+						],
+						"id": "jWfUP1HtC8c8kwiZgFKuuC",
+						"method": "ds.returnLandingPage",
+						"params": [],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "string",
+							"datasource": "landingPage"
+						}
+					}
+				],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"backgroundColor": "#eaefeea3"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"tCQ35reEZL"
+			],
+			"linkedNodes": {}
+		},
+		"soXHLaDARd": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [
+					{
+						"type": "navigation",
+						"id": "v3oVJ7hNRsM2a9uDqCwdRz",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "",
+						"parent": "same-tab",
+						"target": "Home"
+					}
+				],
+				"classNames": [
+					"demoButton2"
+				],
+				"style": {
+					"borderRadius": "20px",
+					"display": "flex",
+					"color": "#ffffffff",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"width": "100%",
+					"gap": "12px",
+					"height": "50px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ce8KyztY6t",
+			"hidden": false,
+			"nodes": [
+				"3J-wKjlBIT",
+				"8OgNWXQKvx"
+			],
+			"linkedNodes": {}
+		},
+		"3J-wKjlBIT": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-home",
+				"style": {
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"display": "block",
+					"marginLeft": "0px",
+					"marginRight": "0px",
+					"paddingLeft": "8px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "soXHLaDARd",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"8OgNWXQKvx": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Home",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center",
+					"width": "fit-content",
+					"marginTop": "0px",
+					"marginRight": "12px",
+					"marginBottom": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "soXHLaDARd",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"tCQ35reEZL": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"height": "100%",
+					"backgroundColor": "#ffffffff",
+					"borderRadius": "10px"
+				},
+				"classNames": [
+					"flex-grow"
+				],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"tTjUE9aiRs",
+				"Re_OIVqWcd"
+			],
+			"linkedNodes": {}
+		},
+		"tTjUE9aiRs": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"alignItems": "start",
+					"justifyContent": "flex-start",
+					"width": "20%",
+					"paddingTop": "0px",
+					"paddingBottom": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "tCQ35reEZL",
+			"hidden": false,
+			"nodes": [
+				"eV0-FrMTnu"
+			],
+			"linkedNodes": {}
+		},
+		"Re_OIVqWcd": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"paddingLeft": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "80%",
+					"borderWidth": "5px",
+					"borderColor": "#eaefeea3",
+					"borderRadius": "10px",
+					"gap": "10px",
+					"backgroundColor": "#eaefeea3"
+				},
+				"classNames": [
+					"flex-grow"
+				],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "tCQ35reEZL",
+			"hidden": false,
+			"nodes": [
+				"JKHnLvI76t",
+				"9x8nOZD4Og"
+			],
+			"linkedNodes": {}
+		},
+		"9x8nOZD4Og": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"width": "100%",
+					"height": "600px"
+				},
+				"classNames": [
+					"flex-grow"
+				],
+				"datasource": "landingPage"
+			},
+			"displayName": "Page Loader",
+			"custom": {},
+			"parent": "Re_OIVqWcd",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"dZL6N4V4wq": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Different parts covered in the app:",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "   -Use of Datatable, different display components to show the entity selections and displaying an in-dept look to view the selected element's details."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "   -Navigation throught different webforms."
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "   -Roles and privileges management."
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontWeight": "500"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "JKHnLvI76t",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"eV0-FrMTnu": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"backgroundColor": "#eaefeea3",
+					"borderRadius": "10px",
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "center",
+					"gap": "30px"
+				},
+				"classNames": [
+					"flex-grow"
+				],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "tTjUE9aiRs",
+			"hidden": false,
+			"nodes": [
+				"ce8KyztY6t",
+				"10wQHpuNil"
+			],
+			"linkedNodes": {}
+		},
+		"KIIqwRjVhu": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "The "
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "backoffice"
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " part is dedicated to the management of the events ressources. Both admins and commercials have access to the backoffice of the app. This latter is divided to 3 panels. Panel 1 is for navigation, assembling the set of classes that users can view. Panel 2 is where we get all the data related to the selected item from the navigation, and in panel 3, we can view the details of one item selected from panel 2, edit it or add a new one."
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "1rem",
+					"textDecorationLine": "none"
+				},
+				"classNames": [
+					"flex-grow"
+				],
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "10wQHpuNil",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"JKHnLvI76t": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"textAlign": "justify",
+					"display": "block",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Re_OIVqWcd",
+			"hidden": false,
+			"nodes": [
+				"dZL6N4V4wq"
+			],
+			"linkedNodes": {}
+		},
+		"10wQHpuNil": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "eV0-FrMTnu",
+			"hidden": false,
+			"nodes": [
+				"KIIqwRjVhu"
+			],
+			"linkedNodes": {}
+		},
+		"ce8KyztY6t": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"width": "100%"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "eV0-FrMTnu",
+			"hidden": false,
+			"nodes": [
+				"soXHLaDARd",
+				"D8VxWOn7BA"
+			],
+			"linkedNodes": {}
+		},
+		"D8VxWOn7BA": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [
+					{
+						"type": "navigation",
+						"id": "v3oVJ7hNRsM2a9uDqCwdRz",
+						"events": [
+							"onclick"
+						],
+						"externalLink": false,
+						"loader": "",
+						"parent": "same-tab",
+						"isHardCoded": false,
+						"target": "landingPage"
+					}
+				],
+				"classNames": [
+					"demoButton2"
+				],
+				"style": {
+					"borderRadius": "20px",
+					"display": "flex",
+					"color": "#ffffffff",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"width": "100%",
+					"gap": "12px",
+					"height": "50px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ce8KyztY6t",
+			"hidden": false,
+			"nodes": [
+				"D8_rBnXX--",
+				"2RzTskQSc5"
+			],
+			"linkedNodes": {}
+		},
+		"D8_rBnXX--": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-regular fa-calendar",
+				"style": {
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"display": "block",
+					"marginLeft": "0px",
+					"marginRight": "0px",
+					"paddingLeft": "8px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "D8VxWOn7BA",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"2RzTskQSc5": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Go to app",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center",
+					"width": "fit-content",
+					"marginTop": "0px",
+					"marginRight": "12px",
+					"marginBottom": "0px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "D8VxWOn7BA",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

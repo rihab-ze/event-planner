@@ -1,0 +1,477 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "email",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			},
+			{
+				"id": "newPwd",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			}
+		],
+		"styles": [
+			{
+				"name": "responsiveCss",
+				"content": "self {\n\tfont-size: clamp(1rem, 0.5rem + 1vw ,2.5rem) !important;\n}",
+				"parentId": null,
+				"id": "FLt7ImnjClATWmUcqfRfJ"
+			},
+			{
+				"name": "responsiveInput",
+				"content": "@media screen and (max-width : 500px) {\r\n\tself {\r\n\t\tfont-size: 10px !important;\r\n\t\twidth: auto !important;\r\n\t}\r\n}\r\n@media screen and (max-width : 1250px) {\r\n\tself {\r\n\t\twidth: auto !important;\r\n\t}\r\n}",
+				"parentId": null,
+				"id": "xbo1EXfmJNrciEeYKj1S0"
+			},
+			{
+				"name": "respnsiveButton",
+				"content": "@media screen and (max-width : 500px) {\n\tself {\n\t\tfont-size: 10px !important;\n\t\twidth: auto;\n\t}\n}",
+				"parentId": null,
+				"id": "SpiDoWnhnC-YlMKqVR2z6"
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": false,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"Fkp6dILfZO"
+			],
+			"linkedNodes": {}
+		},
+		"Fkp6dILfZO": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "100%",
+					"gap": "21px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"lLSBCMScFh",
+				"-0-dRHYf0E",
+				"LT1NvvaJ2D",
+				"1MCjZwTw0s",
+				"Yp-U-_9xPO",
+				"7RS_C6MXEj"
+			],
+			"linkedNodes": {}
+		},
+		"lLSBCMScFh": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Reset Password",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"width": "100%",
+					"height": "47px",
+					"color": "#5863F6",
+					"fontSize": "40px",
+					"fontWeight": "700",
+					"textAlign": "center"
+				},
+				"classNames": [],
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"-0-dRHYf0E": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Email",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"width": "46px",
+					"height": "21px",
+					"color": "#000",
+					"fontSize": "16px",
+					"minWidth": "fit-content",
+					"minHeight": "fit-content",
+					"fontWeight": "500",
+					"maxWidth": "46px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"LT1NvvaJ2D": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"style": {},
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "ii__-Bswuz",
+				"input": "bgtYTdwMY7"
+			}
+		},
+		"ii__-Bswuz": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"deletable": true,
+				"text": "Email"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "LT1NvvaJ2D",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"bgtYTdwMY7": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "text",
+				"style": {
+					"height": "47px",
+					"paddingLeft": "20px",
+					"paddingRight": "20px",
+					"paddingTop": "14px",
+					"paddingBottom": "14px",
+					"borderRadius": "10px"
+				},
+				"moveable": false,
+				"placeholder": "Please Enter your Email",
+				"readonly": false,
+				"datasource": "email",
+				"dataType": "string",
+				"classNames": []
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "LT1NvvaJ2D",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"7RS_C6MXEj": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "center",
+					"paddingTop": "0px",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [
+				"CsJqxJHutY"
+			],
+			"linkedNodes": {}
+		},
+		"CsJqxJHutY": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Reset Password",
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onclick"
+						],
+						"id": "gDXipB5sGWHuQTvgitV5kv",
+						"method": "ds.setNewPassword",
+						"params": [
+							{
+								"name": "email",
+								"type": "string",
+								"datasource": "email",
+								"id": "tyotjr5pYy1mCcLJNxusKk"
+							},
+							{
+								"name": "newPwd",
+								"type": "string",
+								"datasource": "newPwd",
+								"id": "oZJxbieApCjpz9fHoWLs3T"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "string",
+							"datasource": "Shared:publicAccess"
+						},
+						"feedback": true
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex",
+					"paddingLeft": "30px",
+					"paddingTop": "20px",
+					"paddingRight": "30px",
+					"paddingBottom": "20px",
+					"borderRadius": "10px",
+					"width": "208px",
+					"gap": "10px",
+					"height": "61px",
+					"minWidth": "auto",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"backgroundColor": "#5863F6",
+					"minHeight": "auto",
+					"maxWidth": "208px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "7RS_C6MXEj",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "BRR8vSKvR7"
+			}
+		},
+		"BRR8vSKvR7": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "CsJqxJHutY",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Yp-U-_9xPO": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "hidden",
+				"style": {},
+				"iterableChild": true
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "oL55-4jZZl",
+				"input": "WMlCPPYUcM"
+			}
+		},
+		"oL55-4jZZl": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"deletable": true,
+				"text": "NewPwd"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "Yp-U-_9xPO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WMlCPPYUcM": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "password",
+				"style": {
+					"height": "47px",
+					"paddingLeft": "20px",
+					"paddingRight": "20px",
+					"paddingTop": "14px",
+					"paddingBottom": "14px",
+					"borderRadius": "10px"
+				},
+				"moveable": false,
+				"placeholder": "Please Enter your new Password",
+				"readonly": false,
+				"datasource": "newPwd",
+				"dataType": "string",
+				"classNames": []
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "Yp-U-_9xPO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"1MCjZwTw0s": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "New Password",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"width": "46px",
+					"height": "21px",
+					"color": "#000",
+					"fontSize": "16px",
+					"minWidth": "fit-content",
+					"minHeight": "fit-content",
+					"fontWeight": "500",
+					"maxWidth": "46px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "Fkp6dILfZO",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

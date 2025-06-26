@@ -1,0 +1,44 @@
+{
+  "applicationName": "Event Manager",
+  "description": "Demo showing the different implementation of the qodly studio components, events.",
+  "details": "This demo application presents different qodly studio components usages in one place. Introducing our event management app: Your all-in-one solution for seamless planning and event management.",
+  "visuals": [
+    {
+      "description": "Events page",
+      "image": "/$shared/visuals/eventsPage.png",
+      "path": "/$shared/visuals/eventsPage.png"
+    },
+    {
+      "description": "Sessions page",
+      "image": "/$shared/visuals/sessionsPage.png",
+      "path": "/$shared/visuals/sessionsPage.png"
+    },
+    {
+      "description": "Companies page",
+      "image": "/$shared/visuals/companiesPage.png",
+      "path": "/$shared/visuals/companiesPage.png"
+    },
+    {
+      "description": "Sponsors page",
+      "image": "/$shared/visuals/sponsorsPage.png",
+      "path": "/$shared/visuals/sponsorsPage.png"
+    },
+    {
+      "description": "Profile page",
+      "image": "/$shared/visuals/profilePage.png",
+      "path": "/$shared/visuals/profilePage.png"
+    }
+  ],
+  "logo": {
+    "small": "logo_small_path",
+    "large": "/$shared/logos/Q-2.svg"
+  },
+  "qodlyVersion": "all",
+  "author": {
+    "name": "Qodly",
+    "url": "https://www.qodly.com/"
+  },
+  "category": "Qodly starters",
+  "language": "English",
+	"version":"1.1.0"
+}

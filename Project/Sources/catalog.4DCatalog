@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Event4dPlanning" uuid="B617D425FE9F3046B13841409F5527C0" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Inscription" uuid="0EEBDCAFB24F4ACBA6ECBC431C878ED7" id="1">
+		<field name="UUID" uuid="CC4F36952FD64B56AE1121B057B1322B" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="price" uuid="243072FC75C1429C8C771B751DAB7524" type="6" id="2"/>
+		<field name="survey" uuid="044C594E9A87487087F53437090CE2E7" type="21" id="3"/>
+		<field name="moreInfo" uuid="5A40F1799D9A4DF8842DA7B7E793342A" type="21" id="4"/>
+		<field name="event_ID" uuid="C21345D0F10C4D5CBBF3A8B77699F575" type="10" id="5"/>
+		<field name="type_ID" uuid="C4D6BC43C01945FCA7D41F845E98954B" type="10" id="6"/>
+		<field name="employee_ID" uuid="10F238DC748D4BDF99996FD56EC574B2" type="10" id="7"/>
+		<primary_key field_name="UUID" field_uuid="CC4F36952FD64B56AE1121B057B1322B"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="421.45529577776" top="-1346.2785576105" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Event" uuid="611748DA78484207B1DD571BE3488E40" id="2">
+		<field name="UUID" uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="490991A47FDB46779A094E1621C59385" type="10" id="2"/>
+		<field name="location" uuid="A2484A1C5A9E491D8711306B6DB298F4" type="10" id="3"/>
+		<field name="country" uuid="EC54036464604EC99CAB176CC2754C37" type="10" id="4"/>
+		<field name="startDate" uuid="8D064C30E59E44FCADE9BC5B5C959E7E" type="8" id="5"/>
+		<field name="endDate" uuid="202EFEF0E86C4EFFA26AC398120E8A7D" type="8" id="6"/>
+		<field name="address" uuid="ED3E2C850B77443196F9F4CF2564A582" type="21" id="7"/>
+		<field name="access" uuid="F7B81C198FAB4AD08F75A17533265D07" type="10" id="14"/>
+		<field name="repeat" uuid="138492787C1644A98309FC32AF5B9E2D" type="10" id="15"/>
+		<field name="picture" uuid="CD8642B31F234514A5DCA1B69093AA29" type="12" id="16"/>
+		<primary_key field_name="UUID" field_uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-222.92180662976" top="-937.68732420021" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Room" uuid="6A95B8F8968045E2A7D9EAAEDD470F02" id="3">
+		<field name="UUID" uuid="B8011F5002804660BBE0883FC13D1103" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="EC87675FBD5949F79D204A8C236CBE5A" type="10" id="2"/>
+		<field name="capacity" uuid="F1A27802052544B28677EA5DE53DCB72" type="6" id="3"/>
+		<field name="floor" uuid="D701A707A9504821875535A160E7471A" type="10" id="4"/>
+		<field name="configuration" uuid="05F20CBFCE794869877286115706E6A0" type="10" id="5"/>
+		<field name="moreinfo" uuid="5D47EE1C731442FB91CE49E877B522A6" type="21" id="6"/>
+		<field name="event_ID" uuid="8A024F3386084BCB9EEEDDE3F07D991E" type="10" id="7"/>
+		<primary_key field_name="UUID" field_uuid="B8011F5002804660BBE0883FC13D1103"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="520.48168960311" top="-430.92423004473" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Equipment" uuid="140CA35DF8EA4B9196DD3105D65B7C3A" id="4">
+		<field name="UUID" uuid="A325CD93DD354D838DB71224625E3A0F" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="5AD5B47B5AD3471DACB18F8603240C9D" type="10" id="2"/>
+		<field name="kind" uuid="B2E06B66074849BBA531CF10A8605BF6" type="10" id="3"/>
+		<field name="room_ID" uuid="95244A1105954B589323B9F08B80D67B" type="10" id="4"/>
+		<primary_key field_name="UUID" field_uuid="A325CD93DD354D838DB71224625E3A0F"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="961.1065547305" top="-420.2532279776" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Session" uuid="AE6BDE689B274A3A8791999E162F13BD" id="5">
+		<field name="UUID" uuid="27BF645578FA469FA23878044BA927E8" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="sDate" uuid="F9B9101C799E4B648A5FA05E85A026FD" type="8" id="2"/>
+		<field name="startHour" uuid="9684B90580B34EAAA4EB0E919DE3DE1A" type="9" id="3"/>
+		<field name="endHour" uuid="BDB1EF8C29A2418E8F793D81C417869C" type="9" id="4"/>
+		<field name="name" uuid="905B97C568434EB9BFF0779DCACD66E2" type="10" id="5"/>
+		<field name="subject" uuid="6E92C886CC2F453AA5000946ED3355B9" type="10" id="6"/>
+		<field name="abstract" uuid="C26B39AE31F74F3DB2AE830B17087A72" type="10" id="7"/>
+		<field name="level" uuid="B6E829B2425F42AF95E8F7D85D949C09" type="10" id="8"/>
+		<field name="resourceLink" uuid="900E0744F2AF446DAD2EC76BB479BA13" type="10" id="9"/>
+		<field name="moreInfo" uuid="0890D7B82D9C4AB085920E2BA3D0AE32" type="21" id="10"/>
+		<field name="event_ID" uuid="469546A4202B472A9A2C578BAEC7620B" type="10" id="11"/>
+		<field name="type_ID" uuid="9E2D89D649DA4C02953070811929DD85" type="10" id="12"/>
+		<field name="language_ID" uuid="0A1DF186B0B946A1814D87B1F54749D7" type="10" id="13"/>
+		<field name="room_ID" uuid="2CC9CF83E21840BF91E05B1637C0EC20" type="10" id="16"/>
+		<primary_key field_name="UUID" field_uuid="27BF645578FA469FA23878044BA927E8"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="78.699478093011" top="-364.02281593514" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Attende" uuid="BCFFA488AA0C4659AFCFAC96BD7EE194" id="6">
+		<field name="UUID" uuid="B8288864A2BD4A148469A35B4D517E27" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="isPresent" uuid="59DA768057AE4C55BFCE108FD2AEB29F" type="1" id="2"/>
+		<field name="survey" uuid="200F98F2A2A94E24BE2C65A5DA1F6194" type="21" id="3"/>
+		<field name="employee_ID" uuid="52A19970036F405BB443FE0C01CD7674" type="10" id="4"/>
+		<field name="session_ID" uuid="68317BE389A44F08B160FA2F07B156B0" type="10" id="5"/>
+		<primary_key field_name="UUID" field_uuid="B8288864A2BD4A148469A35B4D517E27"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-930.1121265724" top="-78.71423570188" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Technician" uuid="083DEC9903934036864F576B0ED1731A" id="7">
+		<field name="UUID" uuid="DA45CBDEC47C45D6A9A48494BE6DFA7A" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="mission" uuid="ADCCEA339F604AC092C309052C40176F" type="10" id="2"/>
+		<field name="employee_ID" uuid="0B750F64F2A740DE803D8FDA88B4F52B" type="10" id="3"/>
+		<field name="session_ID" uuid="9A27028232FD4496AEAC1ECAFA4C8BE0" type="10" id="4"/>
+		<primary_key field_name="UUID" field_uuid="DA45CBDEC47C45D6A9A48494BE6DFA7A"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-925.84531366122" top="223.38940198141" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Speaker" uuid="7B2F84ABDAF74FBFA0A89A380469AC62" id="8">
+		<field name="UUID" uuid="E1082E275383450EB7D38CB5F4985CA4" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="employee_ID" uuid="9B50E997AE654BCF8C41B7AB69B3601C" type="10" id="2"/>
+		<field name="session_ID" uuid="0EF4B4B7EFD7442883995A5C04F2163C" type="10" id="3"/>
+		<primary_key field_name="UUID" field_uuid="E1082E275383450EB7D38CB5F4985CA4"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-991.34145676549" top="-375.7757920029" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Employee" uuid="90357EED103042CD8BF0C530C6679A0D" id="9">
+		<field name="UUID" uuid="6610F268794749D1AC5F3ABFA6CF5102" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="company_ID" uuid="3A771B34BBB74344953E2E5A74013004" type="10" id="2"/>
+		<field name="civility" uuid="62CB3138627E46F5B0B858BA4B3F19CA" type="10" id="4"/>
+		<field name="commMeans" uuid="0D7F0225B35B40279BC890F5AC594294" type="21" id="5"/>
+		<field name="address" uuid="E9CEB5BCB9914273A2F5D1E51D2CDC02" type="21" id="6"/>
+		<field name="moreInfo" uuid="4C5A239153DA4A3E814700B5C8A69DB3" type="21" id="7"/>
+		<field name="password" uuid="75ACDCA1FF0D4137832D784B00A6B728" type="10" id="8"/>
+		<field name="awsID" uuid="30CAF5EB35E34382B498E98F56CBED56" type="10" unique="true" id="12"/>
+		<field name="picture" uuid="356A2313EB87470CAE726182E92C51B4" type="12" id="14"/>
+		<field name="firstName" uuid="D18B8927D2EC466D8D3A2C7A42A1BA63" type="10" id="17"/>
+		<field name="lastName" uuid="824E116E17AC4859BDDC12EC7F043F57" type="10" id="18"/>
+		<field name="mail" uuid="236FDEFBF5614119937CA16070BDE2CE" type="10" id="19"/>
+		<field name="role" uuid="7BC1E8BB51174C4BA6846F4B3E8CC3EA" type="10" id="20"/>
+		<primary_key field_name="UUID" field_uuid="6610F268794749D1AC5F3ABFA6CF5102"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-2056.8962684513" top="-754.34591540092" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Company" uuid="64E4A9D684484E24AC0012DB9A1A21D5" id="10">
+		<field name="UUID" uuid="1BE3E8DB5410445D847359DD488F6C7E" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="0C2869C5A982477B92E3A8F77D7C7FD5" type="10" id="3"/>
+		<field name="country" uuid="CDF54A586FAE499485A2B16BEB25B056" type="10" id="4"/>
+		<field name="address" uuid="66E6327DF67C43C4AEA0D87AD17F184E" type="21" id="6"/>
+		<primary_key field_name="UUID" field_uuid="1BE3E8DB5410445D847359DD488F6C7E"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-943.6943717564" top="-1023.4589035443" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Stand" uuid="497F788976EC4331BC82BC756209A63B" id="11">
+		<field name="UUID" uuid="32B7C849933D474788C9CE83FE0D5FA8" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="size" uuid="72D6FDF0E7C44A89A8EA75CC80EE9061" type="10" id="2"/>
+		<field name="price" uuid="1D8BF7AB62C14D7883501A20A4E6D773" type="6" id="3"/>
+		<field name="company_ID" uuid="180857149B1E42B481824352265E3328" type="10" id="4"/>
+		<field name="event_ID" uuid="20CB35439EEF4E088B3095E98F0CA89C" type="10" id="6"/>
+		<field name="floor" uuid="B681D3F788A94040BDCD9737C35C672B" type="10" id="7"/>
+		<primary_key field_name="UUID" field_uuid="32B7C849933D474788C9CE83FE0D5FA8"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-92.60528977947" top="-1616.6645502343" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Exhibitor" uuid="D64A382B36FA4150B0FB6B0818E723D0" id="12">
+		<field name="UUID" uuid="848C6FBCC6ED4FEBA7BA0F7C52C7CC70" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="stand_ID" uuid="849EFA55B10A4D7B8A4283D3E2F05B37" type="10" id="2"/>
+		<field name="employee_ID" uuid="D41F3BD3B3CB4A16A62E0C2A147938CD" type="10" id="3"/>
+		<primary_key field_name="UUID" field_uuid="848C6FBCC6ED4FEBA7BA0F7C52C7CC70"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-949.0761879966" top="-1326.4714969953" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="EventActor" uuid="BCB9737AD61A40A18D8C99145BF06818" id="13">
+		<field name="UUID" uuid="0431C08203AF40CB862485630F1A4D77" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="event_ID" uuid="0EFD98F019C84C61A120899AAD1DFCA2" type="10" id="2"/>
+		<field name="biography" uuid="20505505135B4C7287B7D5049C9F4162" type="10" id="3"/>
+		<field name="picture" uuid="E8226C84C82943609AA12D573178E679" type="12" id="4"/>
+		<field name="employee_ID" uuid="67495B5675CD416D8BBE678A2330A0EA" type="10" id="5"/>
+		<primary_key field_name="UUID" field_uuid="0431C08203AF40CB862485630F1A4D77"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-1152.8113514599" top="536.35104482195" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Sponsor" uuid="476C1E1B0A3347A6A4E367EDF1124AA6" id="14">
+		<field name="UUID" uuid="D15FC808E06F40E183259898402AF7C2" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="event_ID" uuid="D9582A0945B54E41AE2FB8930E752FDD" type="10" id="2"/>
+		<field name="kind" uuid="3401EB1375624A4E8EA20F5D803ED5B7" type="10" id="3"/>
+		<field name="price" uuid="40E2B0C49AA9471F915E1BF1557155D2" type="6" id="4"/>
+		<field name="moreInfo" uuid="6ACDA84B7C82496589A030D52BCD2768" type="21" id="5"/>
+		<field name="company_ID" uuid="59666E46CA084C04A84ABFA284E6A9C1" type="10" id="6"/>
+		<primary_key field_name="UUID" field_uuid="D15FC808E06F40E183259898402AF7C2"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="625.06649386764" top="-742.4497733348" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="SessionType" uuid="599CD4B5D473496996C70EAA9D3CA1E5" id="15">
+		<field name="UUID" uuid="AB8AF7F064E94E9CADA783908369A8C2" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="0D1A6A6C5A264F4BA626221C455D2464" type="10" id="2"/>
+		<primary_key field_name="UUID" field_uuid="AB8AF7F064E94E9CADA783908369A8C2"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="521.35026960725" top="-10.457716854556" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Language" uuid="5C5D6474E9BB459CA48B85C8C2955A0A" id="16">
+		<field name="UUID" uuid="95864286C7F94173B7F439E2111C1C84" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="code" uuid="C04BA0E20A0546338C055D5E3FA543A9" type="10" id="2"/>
+		<field name="name" uuid="192C1F4D0F104742973FC88DC0B962E9" type="10" id="3"/>
+		<primary_key field_name="UUID" field_uuid="95864286C7F94173B7F439E2111C1C84"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="456.58686106793" top="332.01326062202" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="InscriptionType" uuid="2260B66933634B4E8D94A60831D71436" id="17">
+		<field name="UUID" uuid="87F145957B00441F8E64390D34F24FFB" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="B5B87F3A56BC40F4984400AF5AE68242" type="10" id="3"/>
+		<primary_key field_name="UUID" field_uuid="87F145957B00441F8E64390D34F24FFB"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="931.2583468442" top="-1127.350088444" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="pinnedEvent" uuid="354282050BBC43A79274EDC009A341DF" id="18">
+		<field name="UUID" uuid="8DC0CA4A8C4648168D484F306AE27D3D" type="10" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="employee_ID" uuid="2DA5CB2A315D4010B5D7E4E289AA6712" type="10" id="2"/>
+		<field name="event_ID" uuid="F503951B1C9B432A963B5E83E2CF6544" type="10" id="3"/>
+		<primary_key field_name="UUID" field_uuid="8DC0CA4A8C4648168D484F306AE27D3D"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="-919.07631906791" top="-522.06004758586" width="200" height="300"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="A95D9369F5994B7CB1C06436A71ADD93" name_Nto1="event" name_1toN="inscriptions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C21345D0F10C4D5CBBF3A8B77699F575" name="event_ID">
+				<table_ref uuid="0EEBDCAFB24F4ACBA6ECBC431C878ED7" name="Inscription"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="84F7D90ED66B48FA9FE1119A945E436B" name_Nto1="event" name_1toN="rooms" state="1">
+		<related_field kind="source">
+			<field_ref uuid="8A024F3386084BCB9EEEDDE3F07D991E" name="event_ID">
+				<table_ref uuid="6A95B8F8968045E2A7D9EAAEDD470F02" name="Room"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="45E2A9F274434A22B822AE95816E9511" name_Nto1="event" name_1toN="sessions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="469546A4202B472A9A2C578BAEC7620B" name="event_ID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="6D495AC433EE4909A50A7B4DBA50D9C3" name_Nto1="event" name_1toN="eventActors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0EFD98F019C84C61A120899AAD1DFCA2" name="event_ID">
+				<table_ref uuid="BCB9737AD61A40A18D8C99145BF06818" name="EventActor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="B05A85DD892E4EBD8AB40A2C3F5FF031" name_Nto1="event" name_1toN="stands" state="1">
+		<related_field kind="source">
+			<field_ref uuid="20CB35439EEF4E088B3095E98F0CA89C" name="event_ID">
+				<table_ref uuid="497F788976EC4331BC82BC756209A63B" name="Stand"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="3DEA0E601F8E4513ACA5F6B87F698FAE" name_Nto1="event" name_1toN="sponsors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D9582A0945B54E41AE2FB8930E752FDD" name="event_ID">
+				<table_ref uuid="476C1E1B0A3347A6A4E367EDF1124AA6" name="Sponsor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="1081DBB4BAEA4C6EBD0D0898B8B53885" name_Nto1="event" name_1toN="pinnedEvents" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F503951B1C9B432A963B5E83E2CF6544" name="event_ID">
+				<table_ref uuid="354282050BBC43A79274EDC009A341DF" name="pinnedEvent"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+				<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="9EFF4C0CB3A544E7BC19AFEFFDD7D1B0" name_Nto1="room" name_1toN="equipments" state="1">
+		<related_field kind="source">
+			<field_ref uuid="95244A1105954B589323B9F08B80D67B" name="room_ID">
+				<table_ref uuid="140CA35DF8EA4B9196DD3105D65B7C3A" name="Equipment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="B8011F5002804660BBE0883FC13D1103" name="UUID">
+				<table_ref uuid="6A95B8F8968045E2A7D9EAAEDD470F02" name="Room"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="096FA6859A4E4A85A4BACF1592050C0A" name_Nto1="room" name_1toN="sessions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="2CC9CF83E21840BF91E05B1637C0EC20" name="room_ID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="B8011F5002804660BBE0883FC13D1103" name="UUID">
+				<table_ref uuid="6A95B8F8968045E2A7D9EAAEDD470F02" name="Room"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="F723989CCDA949B28AFB8F7C980E4345" name_Nto1="session" name_1toN="technicians" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9A27028232FD4496AEAC1ECAFA4C8BE0" name="session_ID">
+				<table_ref uuid="083DEC9903934036864F576B0ED1731A" name="Technician"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="27BF645578FA469FA23878044BA927E8" name="UUID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="2EA8102982834E3282E52E756AA4608E" name_Nto1="session" name_1toN="speakers" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0EF4B4B7EFD7442883995A5C04F2163C" name="session_ID">
+				<table_ref uuid="7B2F84ABDAF74FBFA0A89A380469AC62" name="Speaker"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="27BF645578FA469FA23878044BA927E8" name="UUID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="F3476D568B07446E89F0522715EB3756" name_Nto1="session" name_1toN="attendees" state="1">
+		<related_field kind="source">
+			<field_ref uuid="68317BE389A44F08B160FA2F07B156B0" name="session_ID">
+				<table_ref uuid="BCFFA488AA0C4659AFCFAC96BD7EE194" name="Attende"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="27BF645578FA469FA23878044BA927E8" name="UUID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="C9130C6002FF44C69B5DFF4800D30346" name_Nto1="employee" name_1toN="exhibitors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D41F3BD3B3CB4A16A62E0C2A147938CD" name="employee_ID">
+				<table_ref uuid="D64A382B36FA4150B0FB6B0818E723D0" name="Exhibitor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="E246F9494D30403E95AA3C63F36DAE9B" name_Nto1="employee" name_1toN="attendees" state="1">
+		<related_field kind="source">
+			<field_ref uuid="52A19970036F405BB443FE0C01CD7674" name="employee_ID">
+				<table_ref uuid="BCFFA488AA0C4659AFCFAC96BD7EE194" name="Attende"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="9CAC5D98E367437095286832927D8B59" name_Nto1="employee" name_1toN="technicians" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0B750F64F2A740DE803D8FDA88B4F52B" name="employee_ID">
+				<table_ref uuid="083DEC9903934036864F576B0ED1731A" name="Technician"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="B3B545BBD75F4EBCA6E0DAE7A72B1788" name_Nto1="employee" name_1toN="speakers" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9B50E997AE654BCF8C41B7AB69B3601C" name="employee_ID">
+				<table_ref uuid="7B2F84ABDAF74FBFA0A89A380469AC62" name="Speaker"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="BF5CE75F778746C694811C9674F9E86E" name_Nto1="employee" name_1toN="eventActors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="67495B5675CD416D8BBE678A2330A0EA" name="employee_ID">
+				<table_ref uuid="BCB9737AD61A40A18D8C99145BF06818" name="EventActor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="5B6130C6728A4875B855B0DAE812565A" name_Nto1="employee" name_1toN="inscriptions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="10F238DC748D4BDF99996FD56EC574B2" name="employee_ID">
+				<table_ref uuid="0EEBDCAFB24F4ACBA6ECBC431C878ED7" name="Inscription"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="D3A4726443B44331A9AC01635296ACE2" name_Nto1="employee" name_1toN="pinnedEvents" state="1">
+		<related_field kind="source">
+			<field_ref uuid="2DA5CB2A315D4010B5D7E4E289AA6712" name="employee_ID">
+				<table_ref uuid="354282050BBC43A79274EDC009A341DF" name="pinnedEvent"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="EFBFC954D0EC4148826D953B9E1DA2BB" name_Nto1="company" name_1toN="employees" state="1">
+		<related_field kind="source">
+			<field_ref uuid="3A771B34BBB74344953E2E5A74013004" name="company_ID">
+				<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1BE3E8DB5410445D847359DD488F6C7E" name="UUID">
+				<table_ref uuid="64E4A9D684484E24AC0012DB9A1A21D5" name="Company"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="76D01218B7AE45539ED91B57E7EE0959" name_Nto1="company" name_1toN="stands" state="1">
+		<related_field kind="source">
+			<field_ref uuid="180857149B1E42B481824352265E3328" name="company_ID">
+				<table_ref uuid="497F788976EC4331BC82BC756209A63B" name="Stand"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1BE3E8DB5410445D847359DD488F6C7E" name="UUID">
+				<table_ref uuid="64E4A9D684484E24AC0012DB9A1A21D5" name="Company"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="96343243BB034B2387EEC4D174468C3F" name_Nto1="company" name_1toN="sponsors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="59666E46CA084C04A84ABFA284E6A9C1" name="company_ID">
+				<table_ref uuid="476C1E1B0A3347A6A4E367EDF1124AA6" name="Sponsor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="1BE3E8DB5410445D847359DD488F6C7E" name="UUID">
+				<table_ref uuid="64E4A9D684484E24AC0012DB9A1A21D5" name="Company"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="D956A2FF8E224A759BCF7D26D1AA9CDB" name_Nto1="stand" name_1toN="exhibitors" state="1">
+		<related_field kind="source">
+			<field_ref uuid="849EFA55B10A4D7B8A4283D3E2F05B37" name="stand_ID">
+				<table_ref uuid="D64A382B36FA4150B0FB6B0818E723D0" name="Exhibitor"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="32B7C849933D474788C9CE83FE0D5FA8" name="UUID">
+				<table_ref uuid="497F788976EC4331BC82BC756209A63B" name="Stand"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="BB436B92F44241F6BC2AC7C02D4902E9" name_Nto1="type" name_1toN="sessions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9E2D89D649DA4C02953070811929DD85" name="type_ID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="AB8AF7F064E94E9CADA783908369A8C2" name="UUID">
+				<table_ref uuid="599CD4B5D473496996C70EAA9D3CA1E5" name="SessionType"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="8DE3A7C54E364F5FA4BF0BEEC92811D4" name_Nto1="language" name_1toN="sessions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0A1DF186B0B946A1814D87B1F54749D7" name="language_ID">
+				<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="95864286C7F94173B7F439E2111C1C84" name="UUID">
+				<table_ref uuid="5C5D6474E9BB459CA48B85C8C2955A0A" name="Language"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="9264ED42775D434F93BFBF739C93AC1D" name_Nto1="type" name_1toN="inscriptions" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C4D6BC43C01945FCA7D41F845E98954B" name="type_ID">
+				<table_ref uuid="0EEBDCAFB24F4ACBA6ECBC431C878ED7" name="Inscription"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="87F145957B00441F8E64390D34F24FFB" name="UUID">
+				<table_ref uuid="2260B66933634B4E8D94A60831D71436" name="InscriptionType"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="1016034BC1CF8D40B41CB97D9E2B7C73" type="1">
+		<field_ref uuid="E1082E275383450EB7D38CB5F4985CA4" name="UUID">
+			<table_ref uuid="7B2F84ABDAF74FBFA0A89A380469AC62" name="Speaker"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="355CC4B89FA529419E5E4EECAFCF0FA5" type="1">
+		<field_ref uuid="87F145957B00441F8E64390D34F24FFB" name="UUID">
+			<table_ref uuid="2260B66933634B4E8D94A60831D71436" name="InscriptionType"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="63B56BDB63EB2A48AEC319BD97234B62" type="1">
+		<field_ref uuid="0431C08203AF40CB862485630F1A4D77" name="UUID">
+			<table_ref uuid="BCB9737AD61A40A18D8C99145BF06818" name="EventActor"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="702AC4A6483F6E49AC2A90012361524D" type="1">
+		<field_ref uuid="3DD47FD9DDAF42DDA60BDB3EC94F07FE" name="UUID">
+			<table_ref uuid="611748DA78484207B1DD571BE3488E40" name="Event"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="89ED05F20AC6514EAB6A5C2C2A9491A5" type="1">
+		<field_ref uuid="27BF645578FA469FA23878044BA927E8" name="UUID">
+			<table_ref uuid="AE6BDE689B274A3A8791999E162F13BD" name="Session"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="8B919E5CE7FFEE419700299305BAC768" type="1">
+		<field_ref uuid="D15FC808E06F40E183259898402AF7C2" name="UUID">
+			<table_ref uuid="476C1E1B0A3347A6A4E367EDF1124AA6" name="Sponsor"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="935997CF741FB548BACFB2C67F609402" type="1">
+		<field_ref uuid="32B7C849933D474788C9CE83FE0D5FA8" name="UUID">
+			<table_ref uuid="497F788976EC4331BC82BC756209A63B" name="Stand"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9B70481BB581F04DA60C9597122321E9" type="1">
+		<field_ref uuid="848C6FBCC6ED4FEBA7BA0F7C52C7CC70" name="UUID">
+			<table_ref uuid="D64A382B36FA4150B0FB6B0818E723D0" name="Exhibitor"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A44B7FB36AFAE640B2D4400EAA35A707" type="1">
+		<field_ref uuid="DA45CBDEC47C45D6A9A48494BE6DFA7A" name="UUID">
+			<table_ref uuid="083DEC9903934036864F576B0ED1731A" name="Technician"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C18C2A5441034D4AB56D85CD0C8E654A" type="1">
+		<field_ref uuid="A325CD93DD354D838DB71224625E3A0F" name="UUID">
+			<table_ref uuid="140CA35DF8EA4B9196DD3105D65B7C3A" name="Equipment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CC4FE7B9F145F845B241F58838B4591C" type="1">
+		<field_ref uuid="B8011F5002804660BBE0883FC13D1103" name="UUID">
+			<table_ref uuid="6A95B8F8968045E2A7D9EAAEDD470F02" name="Room"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DADBE38B94A62449B1B66A3EE2188461" type="1">
+		<field_ref uuid="6610F268794749D1AC5F3ABFA6CF5102" name="UUID">
+			<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="E979D1AAD6194345A78A2FB6650A8AAC" type="1">
+		<field_ref uuid="30CAF5EB35E34382B498E98F56CBED56" name="awsID">
+			<table_ref uuid="90357EED103042CD8BF0C530C6679A0D" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="EF600A423C2B5646A6F557501E046172" type="1">
+		<field_ref uuid="95864286C7F94173B7F439E2111C1C84" name="UUID">
+			<table_ref uuid="5C5D6474E9BB459CA48B85C8C2955A0A" name="Language"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F10E37A3B7D16546853D3D0C87FD0370" type="1">
+		<field_ref uuid="AB8AF7F064E94E9CADA783908369A8C2" name="UUID">
+			<table_ref uuid="599CD4B5D473496996C70EAA9D3CA1E5" name="SessionType"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F18F5C5819106344BCEB839D8C3D79D5" type="1">
+		<field_ref uuid="1BE3E8DB5410445D847359DD488F6C7E" name="UUID">
+			<table_ref uuid="64E4A9D684484E24AC0012DB9A1A21D5" name="Company"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F295552F41917248BD303EED9716A732" type="1">
+		<field_ref uuid="B8288864A2BD4A148469A35B4D517E27" name="UUID">
+			<table_ref uuid="BCFFA488AA0C4659AFCFAC96BD7EE194" name="Attende"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F8D952C81CE64C4D8ABFCA81339216EE" type="1">
+		<field_ref uuid="CC4F36952FD64B56AE1121B057B1322B" name="UUID">
+			<table_ref uuid="0EEBDCAFB24F4ACBA6ECBC431C878ED7" name="Inscription"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FFC166DED42B5C43AB8842936CA3F618" type="1">
+		<field_ref uuid="8DC0CA4A8C4648168D484F306AE27D3D" name="UUID">
+			<table_ref uuid="354282050BBC43A79274EDC009A341DF" name="pinnedEvent"/>
+		</field_ref>
+	</index>
+</base>

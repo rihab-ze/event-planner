@@ -1,0 +1,6 @@
+Data/
+userPreferences.*
+./Project/DerivedData.*
+Project/DerivedData
+core.*
+*.zip

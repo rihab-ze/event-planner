@@ -1,0 +1,665 @@
+{
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "Event",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageEvents",
+					"visit"
+				],
+				"create": [
+					"manageEvents"
+				],
+				"update": [
+					"manageEvents",
+					"visit"
+				],
+				"execute": [
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Session",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageSessions",
+					"visit"
+				],
+				"create": [
+					"manageSessions"
+				],
+				"update": [
+					"manageSessions"
+				],
+				"execute": [
+					"manageSessions",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Speaker",
+				"type": "dataclass",
+				"read": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Company",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageCompanies",
+					"commercial"
+				],
+				"create": [
+					"manageCompanies"
+				],
+				"update": [
+					"manageCompanies"
+				],
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Stand",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageStands"
+				],
+				"create": [
+					"manageStands"
+				],
+				"update": [
+					"manageStands"
+				],
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Sponsor",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageSponsors"
+				],
+				"create": [
+					"manageSponsors"
+				],
+				"update": [
+					"manageSponsors"
+				],
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "ds.switchDisplay",
+				"type": "method",
+				"execute": [
+					"guest",
+					"manageEmployees",
+					"manageCompanies",
+					"manageSessions",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.eventActors",
+				"type": "attribute",
+				"read": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.publicSearch",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds.removeCss",
+				"type": "method",
+				"execute": [
+					"guest",
+					"manageEmployees",
+					"manageCompanies",
+					"manageSessions",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "ds.setCss",
+				"type": "method",
+				"execute": [
+					"guest",
+					"manageSessions",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.attendees",
+				"type": "attribute",
+				"read": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Session.attendees",
+				"type": "attribute",
+				"read": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "EventActor",
+				"type": "dataclass",
+				"read": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Employee",
+				"type": "dataclass",
+				"read": [
+					"guest",
+					"manageEmployees",
+					"visit"
+				],
+				"create": [
+					"guest",
+					"manageEmployees",
+					"visit"
+				],
+				"update": [
+					"guest",
+					"manageEmployees",
+					"visit"
+				],
+				"execute": [
+					"guest",
+					"manageEmployees",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "ds.login",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds.setNewPassword",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds.signIn",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds.returnLandingPage",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.onloadSearch",
+				"type": "method",
+				"execute": [
+					"guest",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.saveSearch",
+				"type": "method",
+				"execute": [
+					"guest",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.searchPublicEvents",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.pastEvent",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.upcomingEvents",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.isJoined",
+				"type": "attribute",
+				"read": [
+					"guest"
+				],
+				"update": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Event.join",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "Sponsor.selectedElement",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.setElement",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.onloadSearch",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.saveSearch",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.checkParams",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.create",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.edit",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Sponsor.searchWithCriteria",
+				"type": "method",
+				"execute": [
+					"manageSponsors"
+				]
+			},
+			{
+				"applyTo": "Stand.selectedElement",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.setElement",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.onloadSearch",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.saveSearch",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.checkParams",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.edit",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.create",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Stand.searchWithCriteria",
+				"type": "method",
+				"execute": [
+					"manageStands"
+				]
+			},
+			{
+				"applyTo": "Employee.addInList",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.aws",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.update",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.saveSearch",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.selectedElement",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.onloadSearch",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Employee.setElement",
+				"type": "method",
+				"execute": [
+					"manageEmployees"
+				]
+			},
+			{
+				"applyTo": "Company.setElement",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.onLoadSearch",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.saveSearch",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.selectedElement",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.search",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.create",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Company.edit",
+				"type": "method",
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "ds.requiredField",
+				"type": "method",
+				"execute": [
+					"manageCompanies",
+					"commercial"
+				]
+			},
+			{
+				"applyTo": "SessionType",
+				"type": "dataclass",
+				"read": [
+					"manageSessions"
+				],
+				"create": [
+					"manageSessions"
+				],
+				"update": [
+					"manageSessions"
+				],
+				"execute": [
+					"manageSessions"
+				]
+			},
+			{
+				"applyTo": "Event.selectedElement",
+				"type": "method",
+				"execute": [
+					"manageEvents"
+				]
+			},
+			{
+				"applyTo": "Event.setElement",
+				"type": "method",
+				"execute": [
+					"manageEvents"
+				]
+			},
+			{
+				"applyTo": "Event.create",
+				"type": "method",
+				"execute": [
+					"manageEvents"
+				]
+			},
+			{
+				"applyTo": "Event.edit",
+				"type": "method",
+				"execute": [
+					"manageEvents"
+				]
+			},
+			{
+				"applyTo": "ds.onStartup",
+				"type": "method",
+				"execute": [
+					"visit"
+				]
+			},
+			{
+				"applyTo": "ds",
+				"type": "datastore",
+				"read": [
+					"visit"
+				],
+				"execute": [
+					"visit"
+				]
+			},
+			{
+				"applyTo": "ds.getManifestObject",
+				"type": "method",
+				"execute": [
+					"visit",
+					"organize"
+				]
+			},
+			{
+				"applyTo": "ds.navbar",
+				"type": "method",
+				"execute": [
+					"organize",
+					"commercial"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"id": "hHf7xQb1SdDBAPFDkSUPG6",
+			"privilege": "manageSponsors",
+			"includes": []
+		},
+		{
+			"id": "2oinGzBSM8SFGMgJtrAdP8",
+			"privilege": "manageStands",
+			"includes": []
+		},
+		{
+			"id": "fNvRbdmTLE66GsNs1ND7GU",
+			"privilege": "manageEmployees",
+			"includes": []
+		},
+		{
+			"id": "caCwqwxpBv4D7g9JAWMhEH",
+			"privilege": "manageCompanies",
+			"includes": []
+		},
+		{
+			"id": "vwdZqM5MYnvAogWhuSdzEi",
+			"privilege": "manageSessions",
+			"includes": []
+		},
+		{
+			"id": "pEXUEs8JaaCVf3AkVWtfYJ",
+			"privilege": "manageEvents",
+			"includes": []
+		},
+		{
+			"id": "wLTbytWN4xUujpFr6XPmFr",
+			"privilege": "visit",
+			"includes": []
+		},
+		{
+			"id": "bc7aeyWXk7rrUVxbGnBJoX",
+			"privilege": "commercial",
+			"includes": [
+				"manageSponsors",
+				"manageStands",
+				"manageSessions",
+				"manageEvents",
+				"visit"
+			]
+		},
+		{
+			"id": "wx2XYxPhgPZAWCBKnLFch4",
+			"privilege": "organize",
+			"includes": [
+				"visit",
+				"manageEmployees",
+				"manageCompanies",
+				"manageSessions",
+				"manageEvents",
+				"manageStands",
+				"manageSponsors"
+			]
+		}
+	],
+	"roles": [
+		{
+			"id": "r1yDEEfH6xvN6t9d3eFCA2",
+			"role": "Admin",
+			"privileges": [
+				"organize",
+				"visit",
+				"guest"
+			]
+		},
+		{
+			"id": "u85NBT2LtWh1n3ovbPHcBh",
+			"role": "Commercial",
+			"privileges": [
+				"visit",
+				"guest",
+				"commercial"
+			]
+		},
+		{
+			"id": "bQqr3S7mPUtVkfMGVwx8PS",
+			"role": "Client",
+			"privileges": [
+				"guest",
+				"visit"
+			]
+		}
+	]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
+    <com.4d>
+        <web>
+            <standalone_server>
+                <configuration allow_ssl="true" https_port_number="443" port_number="80" publish_at_startup="false"/>
+                <webstudio enabled="true"/>
+                <qodlystudio enabled="true"/>
+                <rest launch_at_startup="true"/>
+            </standalone_server>
+        </web>
+        <general allow_user_settings="true" execute_host_database_event="true"/>
+        <database>
+            <misc use_ast_interpreter="true"/>
+        </database>
+    </com.4d>
+</preferences>
