@@ -5,7 +5,7 @@ exposed Function saveSearch($search : Variant)
 		Session:C1714.storage.searchCompany:=New shared object:C1526("search"; $search)
 	End use 
 	
-exposed Function $search($searchbox : Variant) : cs:C1710.CompanySelection
+exposed Function search($searchbox : Variant) : cs:C1710.CompanySelection
 	
 	var $search : cs:C1710.Search
 	var $entry : Object
