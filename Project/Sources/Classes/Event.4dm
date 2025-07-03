@@ -5,7 +5,7 @@ exposed Function saveSearch($search : Variant)
 		Session:C1714.storage.searchData:=New shared object:C1526("search"; $search)
 	End use 
 	
-exposed Function $search($search : Variant; $eventSelection : Variant) : cs:C1710.EventSelection
+exposed Function search($search : Variant; $eventSelection : Variant) : cs:C1710.EventSelection
 	var $entry : Object
 	var $searchTag : Text
 	var $searchClass : cs:C1710.Search
@@ -110,7 +110,7 @@ exposed Function fillBarChart() : Object
 	var $events : cs:C1710.EventSelection:=This:C1470.all()
 	var $event : cs:C1710.EventEntity
 	$barChart.options:={xaxis: {categories: []}}
-	$barChart.series:=[{name: "Inscription"; $data: []}; {name: "Sponsors"; $data: []}; {name: "Stands"; $data: []}; {name: "Sessions"; $data: []}]
+	$barChart.series:=[{name: "Inscription"; data: []}; {name: "Sponsors"; data: []}; {name: "Stands"; data: []}; {name: "Sessions"; data: []}]
 	For each ($event; $events)
 		$barChart.options.xaxis.categories.push($event.name)
 		$barChart.series[0].data.push($event.inscriptions.length)

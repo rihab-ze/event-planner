@@ -1,58 +1,60 @@
 Class extends DataClass
 
 
-exposed function $search($search : variant) : cs.SessionSelection
-	var $entry: object
-	var $searchClass: cs.Search
-	$search := ($search # null) ? $search : ""
-	if ($search # "")
-		$searchClass := cs.Search.new()
-		$entry := {dataclass: cs.Session; searchField: []; orderByDefault: "name"}
+exposed Function search($search : Variant) : cs:C1710.SessionSelection
+	var $entry : Object
+	var $searchClass : cs:C1710.Search
+	$search:=($search#Null:C1517) ? $search : ""
+	TRACE:C157
+	If ($search#"")
+		$searchClass:=cs:C1710.Search.new()
+		$entry:={dataclass: cs:C1710.Session; searchField: []; orderByDefault: "name"}
 		
-		$entry.searchField := []
+		$entry.searchField:=[]
 		$entry.searchField.push({attribute: "name"; tag: "name"})
-		$entry.searchField.push({attribute: "subject"; tag: "subject"; tags: ["subject"; "sessionSubject"]; onlyWithTag: true})
-		$entry.searchField.push({path: "event.name"; placeHolder: "event"; tag: "event"; onlyWithTag: true})
-		$entry.searchField.push({path: "room.name"; placeHolder: "room"; tag: "room"; onlyWithTag: true})
-		$entry.searchField.push({path: "speakers.employee.fullName"; placeHolder: "speaker"; tag: "speaker"; onlyWithTag: true})
-		$entry.searchField.push({path: "technicians.employee.fullName"; placeHolder: "technician"; tag: "technician"; onlyWithTag: true})
+		$entry.searchField.push({attribute: "subject"; tag: "subject"; tags: ["subject"; "sessionSubject"]; onlyWithTag: True:C214})
+		$entry.searchField.push({path: "event.name"; placeHolder: "event"; tag: "event"; onlyWithTag: True:C214})
+		$entry.searchField.push({path: "room.name"; placeHolder: "room"; tag: "room"; onlyWithTag: True:C214})
+		$entry.searchField.push({path: "speakers.employee.fullName"; placeHolder: "speaker"; tag: "speaker"; onlyWithTag: True:C214})
+		$entry.searchField.push({path: "technicians.employee.fullName"; placeHolder: "technician"; tag: "technician"; onlyWithTag: True:C214})
 		return $searchClass.perform($entry; $search)
-	else 
-		return this.all()
-	end if 
+	Else 
+		return This:C1470.all()
+	End if 
 	
-exposed function onloadSearch()->$search : text
-	if (session.storage.searchSession # null)
-		$search := session.storage.searchSession.search
-	else 
-		$search := ""
-	end if 
+exposed Function onloadSearch()->$search : Text
+	If (Session:C1714.storage.searchSession#Null:C1517)
+		$search:=Session:C1714.storage.searchSession.search
+	Else 
+		$search:=""
+	End if 
 	
-exposed function saveSearch($search : variant)
-	use (session.storage)
-		session.storage.searchSession := new Shared Object("search"; $search)
-	end use 
+exposed Function saveSearch($search : Variant)
+	Use (Session:C1714.storage)
+		Session:C1714.storage.searchSession:=New shared object:C1526("search"; $search)
+	End use 
 	
-exposed function selectedElement() : cs.SessionEntity
-	if (session.storage # null && session.storage.selectedSession.UUID # null)
-		return this.get(session.storage.selectedSession.UUID)
-	else 
-		return this.all().first()
-	end if 
+exposed Function selectedElement() : cs:C1710.SessionEntity
+	If (Session:C1714.storage#Null:C1517 && Session:C1714.storage.selectedSession.UUID#Null:C1517)
+		return This:C1470.get(Session:C1714.storage.selectedSession.UUID)
+	Else 
+		return This:C1470.all().first()
+	End if 
 	
-exposed function setElement($selSession : cs.SessionEntity)
-	use (session.storage)
-		session.storage.selectedSession := new Shared Object("UUID"; $selSession.UUID)
-	end use 
+exposed Function setElement($selSession : cs:C1710.SessionEntity)
+	Use (Session:C1714.storage)
+		Session:C1714.storage.selectedSession:=New shared object:C1526("UUID"; $selSession.UUID)
+	End use 
 	
 	
-exposed function fillPieChart() : collection
-	var $pieChart: collection := new Collection()
-	$pieChart := this.all().extract("type.name"; "type"; "type.sessions.length"; "occurence")
+exposed Function fillPieChart() : Collection
+	var $pieChart : Collection:=New collection:C1472()
+	$pieChart:=This:C1470.all().extract("type.name"; "type"; "type.sessions.length"; "occurence")
 	return $pieChart
 	
 	
-exposed function getFirstsession()
-	use (session.storage)
-		return this.get(session.storage.firstSession.UUID)
-	end use 
+exposed Function getFirstsession()
+	Use (Session:C1714.storage)
+		return This:C1470.get(Session:C1714.storage.firstSession.UUID)
+	End use 
+	
