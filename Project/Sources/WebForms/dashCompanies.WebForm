@@ -237,10 +237,11 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
-					"display": "flex"
+					"display": "flex",
+					"overflow": "hidden"
 				}
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -278,7 +279,8 @@
 					"backgroundImage": "url(/$shared/assets/images/main.png)"
 				},
 				"serverSideRef": "",
-				"classNames": []
+				"classNames": [],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -311,10 +313,12 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"width": "50%",
-					"height": "auto",
 					"display": "flex",
-					"flexDirection": "column"
-				}
+					"flexDirection": "column",
+					"height": "auto",
+					"overflow": "hidden"
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -408,6 +412,7 @@
 						"externalLink": false,
 						"loader": "RVIwJ77zig",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "addCompany"
 					}
 				],
@@ -473,7 +478,8 @@
 					"marginTop": "12px",
 					"marginLeft": "0px"
 				},
-				"serverSideRef": ""
+				"serverSideRef": "",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -520,7 +526,8 @@
 					"width": "auto"
 				},
 				"serverSideRef": "",
-				"classNames": []
+				"classNames": [],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -551,7 +558,8 @@
 					"height": "auto",
 					"gap": "0px"
 				},
-				"serverSideRef": "hideCampo"
+				"serverSideRef": "hideCampo",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -581,7 +589,8 @@
 					"marginBottom": "0px",
 					"marginTop": "0px",
 					"width": "40%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -599,13 +608,14 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Search",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
 				"style": {
 					"display": "none"
 				},
-				"deletable": true,
-				"text": "Search"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -634,7 +644,10 @@
 				"moveable": false,
 				"readonly": false,
 				"datasource": "search",
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -664,8 +677,9 @@
 						"externalLink": false,
 						"loader": "RVIwJ77zig",
 						"parent": "webform-loader",
-						"target": "editCompany",
-						"disabled": false
+						"disabled": false,
+						"isHardCoded": true,
+						"target": "editCompany"
 					},
 					{
 						"type": "method",
@@ -967,7 +981,8 @@
 					}
 				],
 				"currentElement": "Shared:selectedCompany",
-				"serverSideRef": "hideCampo"
+				"serverSideRef": "hideCampo",
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -991,12 +1006,13 @@
 					"paddingLeft": "0px",
 					"minWidth": "auto",
 					"minHeight": "auto",
-					"height": "100%"
+					"height": "100%",
+					"overflow": "auto"
 				},
 				"serverSideRef": "hideCampoDetail",
 				"datasource": ""
 			},
-			"displayName": "Webform Loader",
+			"displayName": "Page Loader",
 			"custom": {},
 			"parent": "-c0_K2MQmD",
 			"hidden": false,
@@ -1020,7 +1036,8 @@
 					"flex-grow",
 					"visibility"
 				],
-				"serverSideRef": "noCompanies"
+				"serverSideRef": "noCompanies",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1081,7 +1098,8 @@
 					"fontWeight": "500",
 					"color": "#5863F6",
 					"width": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1221,7 +1239,7 @@
 					"visibility"
 				]
 			},
-			"displayName": "Webform Loader",
+			"displayName": "Page Loader",
 			"custom": {},
 			"parent": "-c0_K2MQmD",
 			"hidden": false,

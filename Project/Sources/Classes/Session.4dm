@@ -5,7 +5,6 @@ exposed Function search($search : Variant) : cs:C1710.SessionSelection
 	var $entry : Object
 	var $searchClass : cs:C1710.Search
 	$search:=($search#Null:C1517) ? $search : ""
-	TRACE:C157
 	If ($search#"")
 		$searchClass:=cs:C1710.Search.new()
 		$entry:={dataclass: cs:C1710.Session; searchField: []; orderByDefault: "name"}

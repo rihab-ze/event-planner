@@ -193,9 +193,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Size :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Size :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -261,7 +262,10 @@
 					"color": "#353D66"
 				},
 				"readOnly": false,
-				"serverSideRef": ""
+				"serverSideRef": "",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -305,9 +309,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Price :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -374,7 +379,11 @@
 					"fontWeight": "500",
 					"color": "#353D66"
 				},
-				"dataType": "number"
+				"dataType": "number",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -416,9 +425,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Floor :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Floor :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -483,7 +493,11 @@
 					"fontSize": "16px",
 					"fontWeight": "500",
 					"color": "#353D66"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -781,7 +795,7 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"contentWidth": 1022,
-				"contentHeight": 36
+				"contentHeight": 35
 			},
 			"parent": "OoJJjpehYr",
 			"hidden": false,
@@ -971,7 +985,7 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"contentWidth": 1022,
-				"contentHeight": 36
+				"contentHeight": 35
 			},
 			"parent": "bLUADWqMmz",
 			"hidden": false,

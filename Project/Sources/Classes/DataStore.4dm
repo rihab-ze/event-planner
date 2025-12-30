@@ -223,9 +223,14 @@ exposed Function sbVisibility($standDc : Variant)
 	End if 
 	
 	
-exposed Function login($email : Text; $password : Text) : cs:C1710.EmployeeEntity
+exposed Function authentify($email : Text; $password : Text) : cs:C1710.EmployeeEntity
 	var $user : cs:C1710.EmployeeEntity
 	var $privileges : Collection
+	var $guestPrev : Collection:=["guest"; "guestPromoted"]
+	If (($email="") && ($password=""))
+		Session:C1714.setPrivileges($guestPrev)
+		return Null:C1517
+	End if 
 	If (($email#"") && ($password#""))
 		$user:=ds:C1482.Employee.query("mail = :1"; $email).first()
 		If ($user#Null:C1517)
@@ -306,10 +311,3 @@ exposed Function signIn($email : Text; $pwd : Text; $confirmedPwd : Text; $lastN
 		End if 
 	End if 
 	
-exposed Function returnLandingPage() : Text
-	var $currentUser : cs:C1710.EmployeeEntity:=ds:C1482.Employee.getCurrentUser()
-	If ($currentUser.role="Client")
-		return "clientMainPage"
-	Else 
-		return "dashHome"
-	End if 

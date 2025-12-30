@@ -24,6 +24,40 @@
 				"id": "mK3my6dGm2WyVerLamIzf",
 				"scope": "local"
 			}
+		],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "sessionPage",
+				"id": "rcqJEYhu9HT12HF8idMqFe"
+			},
+			{
+				"label": "companiesPage",
+				"id": "uCJh5CyfDkwQ5cx45rdkSM"
+			},
+			{
+				"label": "employeesPage",
+				"id": "4tXPaAEdTw93PLycEokhGp"
+			},
+			{
+				"label": "standPage",
+				"id": "cutHzGMnDpEyeCDjZRrzoc"
+			},
+			{
+				"label": "sponsorsPage",
+				"id": "aCPLktb2D3BorkcoV78C7K"
+			},
+			{
+				"label": "metricsPage",
+				"id": "7A639MgvN9gsztaEV97vuD"
+			},
+			{
+				"label": "profilePage",
+				"id": "13PQUphrhCVrFHZDhAYnUW"
+			}
 		]
 	},
 	"components": {
@@ -60,7 +94,7 @@
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
 					"display": "flex",
-					"height": "100%"
+					"overflow": "visible"
 				}
 			},
 			"displayName": "Page",
@@ -128,8 +162,7 @@
 					"paddingTop": "0px",
 					"backgroundImage": "url(/$shared/assets/images/main.png)",
 					"backgroundSize": "cover",
-					"backgroundRepeat": "no-repeat",
-					"height": "100%"
+					"backgroundRepeat": "no-repeat"
 				},
 				"classNames": [
 					"flex-grow"
@@ -278,39 +311,27 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "5XEhCG3ZEg45YyasMNrsR3",
 						"events": [
 							"onclick"
 						],
-						"id": "ePEFzCfcuknqMG34hwLFX3",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "eventGo",
-								"id": "radsssCpKWN6NV2GjeKhBQ",
-								"isHardCoded": true,
-								"hardCodedValue": "eventGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD"
+							]
 						}
-					},
-					{
-						"type": "navigation",
-						"id": "iiPjE72h9Mji7eCC1USMma",
-						"events": [
-							"onclick"
-						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"isHardCoded": true,
-						"target": "dashEvents"
 					}
 				],
 				"iconPosition": "left",
@@ -330,7 +351,43 @@
 				"serverSideRef": "eventGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:rcqJEYhu9HT12HF8idMqFe": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:uCJh5CyfDkwQ5cx45rdkSM": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:4tXPaAEdTw93PLycEokhGp": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:7A639MgvN9gsztaEV97vuD": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:aCPLktb2D3BorkcoV78C7K": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:cutHzGMnDpEyeCDjZRrzoc": {
+					"classNames": [
+						"hover"
+					]
+				},
+				"states:13PQUphrhCVrFHZDhAYnUW": {
+					"classNames": [
+						"hover"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -370,38 +427,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "aXKdJ9zwpwzqznbSumq3j9",
 						"events": [
 							"onclick"
 						],
-						"id": "fLgYzfb44JcYQWRPXoHYNs",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "sessionGo",
-								"id": "4Rp9QwX4c1UoA3gkZgGiZZ",
-								"isHardCoded": true,
-								"hardCodedValue": "sessionGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"7A639MgvN9gsztaEV97vuD",
+								"aCPLktb2D3BorkcoV78C7K",
+								"cutHzGMnDpEyeCDjZRrzoc"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "o2Bs7jiJXGtCxnVE6R2xWK",
+						"type": "simple-action",
+						"id": "3XedxEu4mW3NfJbQtRhDA2",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashSessions"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -420,7 +483,14 @@
 				"serverSideRef": "sessionGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:rcqJEYhu9HT12HF8idMqFe": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -460,40 +530,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "pMgpGdvLeZemn6zyAM678E",
 						"events": [
 							"onclick"
 						],
-						"id": "3yk242YMbHqDihZS7YXSq2",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "3B2oqDNoXh2U6wR3AoLDdZ",
-								"isHardCoded": true,
-								"hardCodedValue": "companyGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"4tXPaAEdTw93PLycEokhGp",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD",
+								"cutHzGMnDpEyeCDjZRrzoc"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "dVNvbsHVbReBRTEY7in62n",
+						"type": "simple-action",
+						"id": "nr1gYER2kouvEt2mAL4zRq",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"isHardCoded": true,
-						"target": "dashCompanies",
-						"parent": "webform-loader",
-						"loader": "NK9Vnt3-rN",
-						"disabled": false
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"uCJh5CyfDkwQ5cx45rdkSM"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -512,7 +586,14 @@
 				"serverSideRef": "companyGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:uCJh5CyfDkwQ5cx45rdkSM": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -552,38 +633,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "9HMTPZRLxQjXZXAkkWDeT2",
 						"events": [
 							"onclick"
 						],
-						"id": "q2tbPDARBaPaBeQZqNcJX5",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "employeeGo",
-								"id": "4uyBbjoqrDKc3xSWmjNUe7",
-								"isHardCoded": true,
-								"hardCodedValue": "employeeGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "8UhacXNvbSTLP5vp3rQEhK",
+						"type": "simple-action",
+						"id": "kFC67xEhrzm1aK58veav9s",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashEmployees"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"4tXPaAEdTw93PLycEokhGp"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -602,7 +689,14 @@
 				"serverSideRef": "employeeGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:4tXPaAEdTw93PLycEokhGp": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -671,11 +765,34 @@
 					"paddingLeft": "0px",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
-					"paddingTop": "0px"
+					"paddingTop": "0px",
+					"height": "100%"
 				}
 			},
 			"displayName": "Page Loader",
-			"custom": {},
+			"custom": {
+				"states:uCJh5CyfDkwQ5cx45rdkSM": {
+					"webform": "dashCompanies"
+				},
+				"states:4tXPaAEdTw93PLycEokhGp": {
+					"webform": "dashEmployees"
+				},
+				"states:rcqJEYhu9HT12HF8idMqFe": {
+					"webform": "dashSessions"
+				},
+				"states:aCPLktb2D3BorkcoV78C7K": {
+					"webform": "dashSponsors"
+				},
+				"states:cutHzGMnDpEyeCDjZRrzoc": {
+					"webform": "dashStands"
+				},
+				"states:7A639MgvN9gsztaEV97vuD": {
+					"webform": "dashBoard"
+				},
+				"states:13PQUphrhCVrFHZDhAYnUW": {
+					"webform": "pageProfile"
+				}
+			},
 			"parent": "LPayD9DlSz",
 			"hidden": false,
 			"nodes": [],
@@ -789,38 +906,28 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "vdggSdPxkWJPGoP9ExrcSt",
 						"events": [
 							"onclick"
 						],
-						"id": "uCprSCB2ihxVj2RVF2cL4r",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "eventGo",
-								"id": "uF6mqfsuKkaP5Wra3mThtm",
-								"isHardCoded": true,
-								"hardCodedValue": "eventGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"7A639MgvN9gsztaEV97vuD",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
-					},
-					{
-						"type": "navigation",
-						"id": "dF65mMaqY6umUdDFEreQsu",
-						"events": [
-							"onclick"
-						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashEvents"
 					}
 				],
 				"iconPosition": "top",
@@ -839,7 +946,50 @@
 				"serverSideRef": "eventGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:uCJh5CyfDkwQ5cx45rdkSM": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:4tXPaAEdTw93PLycEokhGp": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:7A639MgvN9gsztaEV97vuD": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:13PQUphrhCVrFHZDhAYnUW": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:rcqJEYhu9HT12HF8idMqFe": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:aCPLktb2D3BorkcoV78C7K": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				},
+				"states:cutHzGMnDpEyeCDjZRrzoc": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -878,38 +1028,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "hDhjywGcS9AXZkEDQwK5qr",
 						"events": [
 							"onclick"
 						],
-						"id": "sZ3ZFUUXdfdKdKKKrBWRBw",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "sessionGo",
-								"id": "7awh9xMeNbBtLvwLQ6cMsC",
-								"isHardCoded": true,
-								"hardCodedValue": "sessionGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "9RJ4eiH3Sy9XUnCyDew6Nw",
+						"type": "simple-action",
+						"id": "98YDt6L7BvHysYKF3sTx5X",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashSessions"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -928,7 +1085,15 @@
 				"serverSideRef": "sessionGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:rcqJEYhu9HT12HF8idMqFe": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -967,38 +1132,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "3bPCp9eVLpBDZBp3fYp2e8",
 						"events": [
 							"onclick"
 						],
-						"id": "fqxLYnSLn5en8Vzr9EuYwB",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "pzSNhLvLGYr1TVTnvEQixU",
-								"isHardCoded": true,
-								"hardCodedValue": "companyGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"13PQUphrhCVrFHZDhAYnUW",
+								"aCPLktb2D3BorkcoV78C7K",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"7A639MgvN9gsztaEV97vuD",
+								"4tXPaAEdTw93PLycEokhGp"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "iVzJZTPdB1XzTygFFYHrYc",
+						"type": "simple-action",
+						"id": "5qhq69PSVLR7ef9BnWEuKR",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashCompanies"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"uCJh5CyfDkwQ5cx45rdkSM"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -1017,7 +1189,15 @@
 				"serverSideRef": "companyGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:uCJh5CyfDkwQ5cx45rdkSM": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -1056,38 +1236,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "kYpoFdrtKD9HbkVoQ7qj62",
 						"events": [
 							"onclick"
 						],
-						"id": "nLodnhS9s1ScyG2vaPWGd2",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "uJEY9Le8uh8dBHNnu9N9mD",
-								"isHardCoded": true,
-								"hardCodedValue": "employeeGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "qar99td3fw2wDfbS4tX6Eb",
+						"type": "simple-action",
+						"id": "aNe6FzCUa6SoDzrRXbUeU4",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashEmployees"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"4tXPaAEdTw93PLycEokhGp"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -1106,7 +1293,15 @@
 				"serverSideRef": "employeeGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:4tXPaAEdTw93PLycEokhGp": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -1144,38 +1339,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "uKCqUcKgSG7dDhVP852AJc",
 						"events": [
 							"onclick"
 						],
-						"id": "xomjtHDyeerUkyNyvW5byP",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "sponsorGo",
-								"id": "nC4MdB1SACFuYrvcshbjsU",
-								"isHardCoded": true,
-								"hardCodedValue": "sponsorGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"7A639MgvN9gsztaEV97vuD"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "8UhacXNvbSTLP5vp3rQEhK",
+						"type": "simple-action",
+						"id": "jfs7Jd5onHeHEyCPAXVqiQ",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashSponsors"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"aCPLktb2D3BorkcoV78C7K"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -1194,7 +1395,14 @@
 				"serverSideRef": "sponsorGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:aCPLktb2D3BorkcoV78C7K": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -1234,38 +1442,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "pwUbsGmwpnLDmycGV84kFp",
 						"events": [
 							"onclick"
 						],
-						"id": "wBd1P99R47q5wm2EgpKcgj",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "standGo",
-								"id": "it8rwMkLqmVEPqT1eUPsFy",
-								"isHardCoded": true,
-								"hardCodedValue": "standGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "8UhacXNvbSTLP5vp3rQEhK",
+						"type": "simple-action",
+						"id": "1Qg3DaPToCS4pmDbMmnH1t",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashStands"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"cutHzGMnDpEyeCDjZRrzoc"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -1284,7 +1498,14 @@
 				"serverSideRef": "standGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:cutHzGMnDpEyeCDjZRrzoc": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -1325,38 +1546,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "hW8Lm5i9fLYb5zQMTLkBmp",
 						"events": [
 							"onclick"
 						],
-						"id": "m4a4X7C46YEdYDQ5jzHJTj",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "k45e5yUPBJPNk6Aiowd6tn",
-								"isHardCoded": true,
-								"hardCodedValue": "sponsorGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"7A639MgvN9gsztaEV97vuD",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "mA2kjL7nCcqccYcDzCGJW6",
+						"type": "simple-action",
+						"id": "wVzHBriEJ4XwogdFG4LHfh",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashSponsors"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"aCPLktb2D3BorkcoV78C7K"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -1375,7 +1603,15 @@
 				"serverSideRef": "sponsorGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:aCPLktb2D3BorkcoV78C7K": {
+					"classNames": [
+						"navButtons_",
+						"flexOne_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -1414,38 +1650,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "owvKRgoTPmbYYPgFTuUY3M",
 						"events": [
 							"onclick"
 						],
-						"id": "b3nADkMmPZoq9iJ7tbVJ8s",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "qtSM2Akp3brPq9VBE5y5iu",
-								"isHardCoded": true,
-								"hardCodedValue": "standGo"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "5AJgvgBY8bugG8sqF37ECa",
+						"type": "simple-action",
+						"id": "6ppR3zgdSvyaLPecAr4XZY",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "dashStands"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"cutHzGMnDpEyeCDjZRrzoc"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -1464,7 +1707,15 @@
 				"serverSideRef": "standGo"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:cutHzGMnDpEyeCDjZRrzoc": {
+					"classNames": [
+						"flexOne_",
+						"navButtons_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],
@@ -1499,15 +1750,45 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "navigation",
-						"id": "2URsF75xX2tbmSamN9q3gT",
+						"type": "simple-action",
+						"id": "d5PnQbtnm6BDv7NbqYzqDn",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"target": "pageProfile"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"7A639MgvN9gsztaEV97vuD"
+							]
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "bRoAvN312nW93on97ja5AA",
+						"events": [
+							"onclick"
+						],
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
+						}
 					}
 				],
 				"style": {
@@ -1521,7 +1802,11 @@
 				"defaultImgSrc": "/$Shared/assets/images/user.jpg"
 			},
 			"displayName": "Image",
-			"custom": {},
+			"custom": {
+				"states:13PQUphrhCVrFHZDhAYnUW": {
+					"classNames": []
+				}
+			},
 			"parent": "_xS7g1_3e_",
 			"hidden": false,
 			"nodes": [],
@@ -1539,39 +1824,44 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "wic3vPdBySyJb5iNGAtwfW",
 						"events": [
 							"onclick"
 						],
-						"id": "xomjtHDyeerUkyNyvW5byP",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "sponsorGo",
-								"id": "nC4MdB1SACFuYrvcshbjsU",
-								"isHardCoded": true,
-								"hardCodedValue": "metrics"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"4tXPaAEdTw93PLycEokhGp",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "8UhacXNvbSTLP5vp3rQEhK",
+						"type": "simple-action",
+						"id": "bTDvyaVGqbe6z4goB6tvWL",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"isHardCoded": true,
-						"target": "dashBoard"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"7A639MgvN9gsztaEV97vuD"
+							]
+						}
 					}
 				],
 				"iconPosition": "left",
@@ -1590,7 +1880,14 @@
 				"serverSideRef": "metrics"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:7A639MgvN9gsztaEV97vuD": {
+					"classNames": [
+						"hover",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "Cj0WdhY7Wz",
 			"hidden": false,
 			"nodes": [],
@@ -1631,39 +1928,45 @@
 				],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "1JCnyhNjAHp5qAveSkTBqA",
 						"events": [
 							"onclick"
 						],
-						"id": "m4a4X7C46YEdYDQ5jzHJTj",
-						"method": "ds.navbar",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "k45e5yUPBJPNk6Aiowd6tn",
-								"isHardCoded": true,
-								"hardCodedValue": "metrics"
-							}
-						],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"rcqJEYhu9HT12HF8idMqFe",
+								"uCJh5CyfDkwQ5cx45rdkSM",
+								"4tXPaAEdTw93PLycEokhGp",
+								"cutHzGMnDpEyeCDjZRrzoc",
+								"aCPLktb2D3BorkcoV78C7K",
+								"13PQUphrhCVrFHZDhAYnUW"
+							]
 						}
 					},
 					{
-						"type": "navigation",
-						"id": "mA2kjL7nCcqccYcDzCGJW6",
+						"type": "simple-action",
+						"id": "qBd2tBMbrJbd4tLaucBh87",
 						"events": [
 							"onclick"
 						],
-						"externalLink": false,
-						"loader": "NK9Vnt3-rN",
-						"parent": "webform-loader",
-						"isHardCoded": true,
-						"target": "dashBoard"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "add",
+							"states": [
+								"7A639MgvN9gsztaEV97vuD"
+							]
+						}
 					}
 				],
 				"iconPosition": "top",
@@ -1682,7 +1985,15 @@
 				"serverSideRef": "metrics"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:7A639MgvN9gsztaEV97vuD": {
+					"classNames": [
+						"navButtons_",
+						"flexOne_",
+						"navButtonColor"
+					]
+				}
+			},
 			"parent": "iAvyK4CCGA",
 			"hidden": false,
 			"nodes": [],

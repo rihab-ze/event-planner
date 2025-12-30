@@ -1,0 +1,123 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "landingPage",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "string",
+				"initialValue": ""
+			}
+		],
+		"styles": [],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "isAdmin",
+				"id": "rWMeR48Fs6EejFC6qpwey1",
+				"conditions": {
+					"id": "fRmBCU3evp3di8k9xaEick",
+					"type": "combination",
+					"op": "or",
+					"conditions": [
+						{
+							"id": "1bDcHg7iR4RmoHK6XTE6kD",
+							"type": "privilege",
+							"name": "condition",
+							"value": "commercial",
+							"valueType": "hardCoded",
+							"path": "Shared:currentUser",
+							"dsType": "entity",
+							"op": "eq"
+						},
+						{
+							"id": "kQ7Zv2nK5F217fmR3o1TKx",
+							"type": "privilege",
+							"name": "condition",
+							"value": "organize",
+							"valueType": "hardCoded",
+							"op": "eq"
+						}
+					]
+				}
+			},
+			{
+				"label": "isClient",
+				"id": "jDySPxXNqnBG9SyabSE2Vd",
+				"conditions": {
+					"id": "2TZsqMv9oKSBoaVqoRMXV9",
+					"type": "privilege",
+					"name": "condition",
+					"value": "visit",
+					"valueType": "hardCoded",
+					"path": "",
+					"dsType": "",
+					"op": "eq"
+				}
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"airyMode": true,
+				"className": "bg-white h-full w-full px-6",
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px"
+				}
+			},
+			"displayName": "Page",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"WOV08EfFVI"
+			],
+			"linkedNodes": {}
+		},
+		"WOV08EfFVI": {
+			"type": {
+				"resolvedName": "WebformLoader"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"style": {
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"height": "inherit"
+				},
+				"webform": "login"
+			},
+			"displayName": "Page Loader",
+			"custom": {
+				"states:rWMeR48Fs6EejFC6qpwey1": {
+					"datasource": "",
+					"webform": "dashHome"
+				},
+				"states:jDySPxXNqnBG9SyabSE2Vd": {
+					"webform": "PublicAccess"
+				}
+			},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

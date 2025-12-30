@@ -1,16 +1,48 @@
 {
+	"forceLogin": true,
+	"restrictedByDefault": false,
 	"permissions": {
 		"allowed": [
+			{
+				"applyTo": "ds.getManifestObject",
+				"type": "method",
+				"execute": [
+					"guest",
+					"visit",
+					"organize"
+				]
+			},
+			{
+				"applyTo": "ds.authentify",
+				"type": "method",
+				"execute": [
+					"guest"
+				]
+			},
+			{
+				"applyTo": "ds.generateData",
+				"type": "method",
+				"execute": [
+					"guest"
+				],
+				"promote": [
+					"guest"
+				]
+			},
 			{
 				"applyTo": "Event",
 				"type": "dataclass",
 				"read": [
-					"guest",
+					"guestPromoted",
 					"manageEvents",
 					"visit"
 				],
 				"create": [
+					"guestPromoted",
 					"manageEvents"
+				],
+				"drop": [
+					"guestPromoted"
 				],
 				"update": [
 					"manageEvents",
@@ -22,21 +54,132 @@
 				]
 			},
 			{
+				"applyTo": "Language",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
+				"applyTo": "SessionType",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted",
+					"manageSessions"
+				],
+				"create": [
+					"guestPromoted",
+					"manageSessions"
+				],
+				"drop": [
+					"guestPromoted"
+				],
+				"update": [
+					"manageSessions"
+				],
+				"execute": [
+					"manageSessions"
+				]
+			},
+			{
+				"applyTo": "Room",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
 				"applyTo": "Session",
 				"type": "dataclass",
 				"read": [
-					"guest",
+					"guestPromoted",
 					"manageSessions",
 					"visit"
 				],
 				"create": [
+					"guestPromoted",
 					"manageSessions"
+				],
+				"drop": [
+					"guestPromoted"
 				],
 				"update": [
 					"manageSessions"
 				],
 				"execute": [
 					"manageSessions",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Equipment",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
+				"applyTo": "Company",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted",
+					"manageCompanies",
+					"commercial"
+				],
+				"create": [
+					"guestPromoted",
+					"manageCompanies"
+				],
+				"drop": [
+					"guestPromoted"
+				],
+				"update": [
+					"manageCompanies"
+				],
+				"execute": [
+					"manageCompanies"
+				]
+			},
+			{
+				"applyTo": "Employee",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted",
+					"manageEmployees",
+					"visit"
+				],
+				"create": [
+					"guestPromoted",
+					"manageEmployees",
+					"visit"
+				],
+				"drop": [
+					"guestPromoted"
+				],
+				"update": [
+					"manageEmployees",
+					"visit"
+				],
+				"execute": [
+					"manageEmployees",
 					"visit"
 				]
 			},
@@ -44,236 +187,140 @@
 				"applyTo": "Speaker",
 				"type": "dataclass",
 				"read": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Company",
-				"type": "dataclass",
-				"read": [
-					"guest",
-					"manageCompanies",
-					"commercial"
+					"guestPromoted"
 				],
 				"create": [
-					"manageCompanies"
+					"guestPromoted"
 				],
-				"update": [
-					"manageCompanies"
-				],
-				"execute": [
-					"manageCompanies"
+				"drop": [
+					"guestPromoted"
 				]
 			},
 			{
-				"applyTo": "Stand",
+				"applyTo": "Technician",
 				"type": "dataclass",
 				"read": [
-					"guest",
-					"manageStands"
+					"guestPromoted"
 				],
 				"create": [
-					"manageStands"
+					"guestPromoted"
 				],
-				"update": [
-					"manageStands"
-				],
-				"execute": [
-					"manageStands"
+				"drop": [
+					"guestPromoted"
 				]
 			},
 			{
-				"applyTo": "Sponsor",
+				"applyTo": "Attende",
 				"type": "dataclass",
 				"read": [
-					"guest",
-					"manageSponsors"
+					"guestPromoted"
 				],
 				"create": [
-					"manageSponsors"
+					"guestPromoted"
 				],
-				"update": [
-					"manageSponsors"
-				],
-				"execute": [
-					"manageSponsors"
-				]
-			},
-			{
-				"applyTo": "ds.switchDisplay",
-				"type": "method",
-				"execute": [
-					"guest",
-					"manageEmployees",
-					"manageCompanies",
-					"manageSessions",
-					"manageEvents",
-					"visit"
-				]
-			},
-			{
-				"applyTo": "Event.eventActors",
-				"type": "attribute",
-				"read": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.publicSearch",
-				"type": "method",
-				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "ds.removeCss",
-				"type": "method",
-				"execute": [
-					"guest",
-					"manageEmployees",
-					"manageCompanies",
-					"manageSessions",
-					"manageEvents",
-					"visit"
-				]
-			},
-			{
-				"applyTo": "ds.setCss",
-				"type": "method",
-				"execute": [
-					"guest",
-					"manageSessions",
-					"manageEvents",
-					"visit"
-				]
-			},
-			{
-				"applyTo": "Event.attendees",
-				"type": "attribute",
-				"read": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Session.attendees",
-				"type": "attribute",
-				"read": [
-					"guest"
+				"drop": [
+					"guestPromoted"
 				]
 			},
 			{
 				"applyTo": "EventActor",
 				"type": "dataclass",
 				"read": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Employee",
-				"type": "dataclass",
-				"read": [
-					"guest",
-					"manageEmployees",
-					"visit"
+					"guestPromoted"
 				],
 				"create": [
-					"guest",
-					"manageEmployees",
-					"visit"
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
+				"applyTo": "InscriptionType",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
+				"applyTo": "Inscription",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
+				]
+			},
+			{
+				"applyTo": "Stand",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted",
+					"manageStands"
+				],
+				"create": [
+					"guestPromoted",
+					"manageStands"
+				],
+				"drop": [
+					"guestPromoted"
 				],
 				"update": [
-					"guest",
-					"manageEmployees",
-					"visit"
+					"manageStands"
 				],
 				"execute": [
-					"guest",
-					"manageEmployees",
-					"visit"
+					"manageStands"
 				]
 			},
 			{
-				"applyTo": "ds.login",
-				"type": "method",
-				"execute": [
-					"guest"
+				"applyTo": "Exhibitor",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted"
+				],
+				"create": [
+					"guestPromoted"
+				],
+				"drop": [
+					"guestPromoted"
 				]
 			},
 			{
-				"applyTo": "ds.setNewPassword",
-				"type": "method",
+				"applyTo": "Sponsor",
+				"type": "dataclass",
+				"read": [
+					"guestPromoted",
+					"manageSponsors"
+				],
+				"create": [
+					"guestPromoted",
+					"manageSponsors"
+				],
+				"drop": [
+					"guestPromoted"
+				],
+				"update": [
+					"manageSponsors"
+				],
 				"execute": [
-					"guest"
+					"manageSponsors"
 				]
 			},
 			{
 				"applyTo": "ds.signIn",
 				"type": "method",
 				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "ds.returnLandingPage",
-				"type": "method",
-				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.onloadSearch",
-				"type": "method",
-				"execute": [
-					"guest",
-					"manageEvents",
-					"visit"
-				]
-			},
-			{
-				"applyTo": "Event.saveSearch",
-				"type": "method",
-				"execute": [
-					"guest",
-					"manageEvents",
-					"visit"
-				]
-			},
-			{
-				"applyTo": "Event.searchPublicEvents",
-				"type": "method",
-				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.pastEvent",
-				"type": "method",
-				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.upcomingEvents",
-				"type": "method",
-				"execute": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.isJoined",
-				"type": "attribute",
-				"read": [
-					"guest"
-				],
-				"update": [
-					"guest"
-				]
-			},
-			{
-				"applyTo": "Event.join",
-				"type": "method",
-				"execute": [
-					"guest"
+					"guestPromoted"
 				]
 			},
 			{
@@ -389,14 +436,29 @@
 				]
 			},
 			{
-				"applyTo": "Employee.addInList",
+				"applyTo": "ds.switchDisplay",
 				"type": "method",
 				"execute": [
-					"manageEmployees"
+					"manageEmployees",
+					"manageCompanies",
+					"manageSessions",
+					"manageEvents",
+					"visit"
 				]
 			},
 			{
-				"applyTo": "Employee.aws",
+				"applyTo": "ds.removeCss",
+				"type": "method",
+				"execute": [
+					"manageEmployees",
+					"manageCompanies",
+					"manageSessions",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Employee.addInList",
 				"type": "method",
 				"execute": [
 					"manageEmployees"
@@ -495,19 +557,28 @@
 				]
 			},
 			{
-				"applyTo": "SessionType",
-				"type": "dataclass",
-				"read": [
-					"manageSessions"
-				],
-				"create": [
-					"manageSessions"
-				],
-				"update": [
-					"manageSessions"
-				],
+				"applyTo": "ds.setCss",
+				"type": "method",
 				"execute": [
-					"manageSessions"
+					"manageSessions",
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.onloadSearch",
+				"type": "method",
+				"execute": [
+					"manageEvents",
+					"visit"
+				]
+			},
+			{
+				"applyTo": "Event.saveSearch",
+				"type": "method",
+				"execute": [
+					"manageEvents",
+					"visit"
 				]
 			},
 			{
@@ -554,26 +625,15 @@
 				"execute": [
 					"visit"
 				]
-			},
-			{
-				"applyTo": "ds.getManifestObject",
-				"type": "method",
-				"execute": [
-					"visit",
-					"organize"
-				]
-			},
-			{
-				"applyTo": "ds.navbar",
-				"type": "method",
-				"execute": [
-					"organize",
-					"commercial"
-				]
 			}
 		]
 	},
 	"privileges": [
+		{
+			"id": "7659PEuStPipbxBbQk9LbB",
+			"privilege": "guestPromoted",
+			"includes": []
+		},
 		{
 			"id": "hHf7xQb1SdDBAPFDkSUPG6",
 			"privilege": "manageSponsors",
@@ -610,17 +670,6 @@
 			"includes": []
 		},
 		{
-			"id": "bc7aeyWXk7rrUVxbGnBJoX",
-			"privilege": "commercial",
-			"includes": [
-				"manageSponsors",
-				"manageStands",
-				"manageSessions",
-				"manageEvents",
-				"visit"
-			]
-		},
-		{
 			"id": "wx2XYxPhgPZAWCBKnLFch4",
 			"privilege": "organize",
 			"includes": [
@@ -631,6 +680,17 @@
 				"manageEvents",
 				"manageStands",
 				"manageSponsors"
+			]
+		},
+		{
+			"id": "bc7aeyWXk7rrUVxbGnBJoX",
+			"privilege": "commercial",
+			"includes": [
+				"manageSponsors",
+				"manageStands",
+				"manageSessions",
+				"manageEvents",
+				"visit"
 			]
 		}
 	],

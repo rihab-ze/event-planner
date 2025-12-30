@@ -16,12 +16,6 @@
 				"id": "M5tOwO5iVeaIgnk8VvRpe"
 			},
 			{
-				"name": "flexFlip_",
-				"content": "@media only screen and (max-width: 1111px){\n\tself{\n\t\tdisplay: flex !important;\n\t\tflex-direction: column-reverse !important;\t\n\t\talign-items: center !important;\n\t\talign-self: center !important;\n\t}\n}",
-				"parentId": null,
-				"id": "XuVCsG3thREhKN9dfO4sd"
-			},
-			{
 				"name": "navButtonColor",
 				"content": "self {\n\tcolor: #5863F6 !important;\n  background-color: transparent !important;\n}",
 				"parentId": null,
@@ -290,6 +284,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashEvents"
 					}
 				],
@@ -382,6 +377,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashSessions"
 					}
 				],
@@ -473,6 +469,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashCompanies"
 					}
 				],
@@ -564,6 +561,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashEmployees"
 					}
 				],
@@ -832,6 +830,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashEvents"
 					}
 				],
@@ -921,6 +920,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashSessions"
 					}
 				],
@@ -1010,6 +1010,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashCompanies"
 					}
 				],
@@ -1099,6 +1100,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashEmployees"
 					}
 				],
@@ -1188,6 +1190,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashSponsors"
 					}
 				],
@@ -1280,6 +1283,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashStands"
 					}
 				],
@@ -1371,6 +1375,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashSponsors"
 					}
 				],
@@ -1462,6 +1467,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "dashStands"
 					}
 				],
@@ -1524,6 +1530,7 @@
 						"externalLink": false,
 						"loader": "NK9Vnt3-rN",
 						"parent": "webform-loader",
+						"isHardCoded": true,
 						"target": "pageProfile"
 					}
 				],

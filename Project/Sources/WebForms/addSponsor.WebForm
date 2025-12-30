@@ -70,7 +70,7 @@
 					"paddingLeft": "0px"
 				}
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -99,7 +99,8 @@
 					"flexDirection": "column",
 					"width": "100%",
 					"height": "100%"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -139,7 +140,8 @@
 					"fontSize": "18px",
 					"fontWeight": "500",
 					"marginLeft": "24px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -162,7 +164,8 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"flexDirection": "column"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -192,7 +195,8 @@
 					"marginTop": "0px",
 					"gap": "4px"
 				},
-				"serverSideRef": "kind"
+				"serverSideRef": "kind",
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -210,9 +214,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Kind :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Kind :",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -278,7 +283,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -302,7 +310,8 @@
 					"marginTop": "0px",
 					"gap": "4px"
 				},
-				"serverSideRef": "price"
+				"serverSideRef": "price",
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -320,9 +329,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Price :",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -390,7 +400,10 @@
 					"fontWeight": "500"
 				},
 				"format": "#,##0.00 $",
-				"dataType": "number"
+				"dataType": "number",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -415,7 +428,8 @@
 					"marginTop": "0px",
 					"gap": "4px"
 				},
-				"serverSideRef": "contact"
+				"serverSideRef": "contact",
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -433,9 +447,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Contact :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Contact :",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -503,7 +518,10 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -529,7 +547,8 @@
 					"paddingTop": "0px",
 					"display": "flex",
 					"flexDirection": "column"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -570,7 +589,8 @@
 					"fontSize": "16px",
 					"color": "#A5A5A5",
 					"fontWeight": "inherit"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -668,7 +688,8 @@
 					"marginLeft": "0px",
 					"color": "#353D66",
 					"height": "36px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -707,7 +728,8 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -754,7 +776,8 @@
 				"datasource": "$This.name",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -782,7 +805,8 @@
 					"flexDirection": "column",
 					"width": "100%"
 				},
-				"serverSideRef": "company"
+				"serverSideRef": "company",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -823,7 +847,8 @@
 					"fontSize": "16px",
 					"color": "#A5A5A5",
 					"fontWeight": "inherit"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -921,7 +946,8 @@
 					"marginLeft": "0px",
 					"color": "#353D66",
 					"height": "36px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -960,7 +986,8 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -985,7 +1012,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "Shared:$This.name",
+								"datasource": "$This.name",
 								"children": [
 									{
 										"text": "companies",
@@ -1004,13 +1031,18 @@
 						]
 					}
 				],
-				"datasource": "Shared:$This.name",
+				"datasource": "$This.name",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "VeWMld6ufi",
 			"hidden": false,
 			"nodes": [],
@@ -1031,7 +1063,8 @@
 					"marginLeft": "0px",
 					"justifyContent": "flex-end",
 					"alignItems": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1335,18 +1368,6 @@
 							"name": "result",
 							"type": "Variable"
 						}
-					},
-					{
-						"type": "navigation",
-						"id": "2UkkPhS2fqH3Npey3dLYfd",
-						"events": [
-							"onclick"
-						],
-						"externalLink": false,
-						"loader": "",
-						"parent": "webform-loader-self",
-						"target": "addCompanyDup2",
-						"disabled": true
 					}
 				],
 				"iconPosition": "hidden",

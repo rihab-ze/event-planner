@@ -1,5 +1,5 @@
 {
-	"webforms.renderer.indexPage": "login",
+	"webforms.renderer.indexPage": "Home",
 	"webforms.display-mode": "airy",
 	"webforms.i18n": {
 		"supported": [],

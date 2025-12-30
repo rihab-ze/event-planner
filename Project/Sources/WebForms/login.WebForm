@@ -17,37 +17,104 @@
 				"initialValue": ""
 			}
 		],
-		"styles": [
-			{
-				"name": "responsiveInput",
-				"content": "@media screen and (max-width : 500px) {\r\n\tself {\r\n\t\tfont-size: 10px !important;\r\n\t\twidth: auto !important;\r\n\t}\r\n}\r\n@media screen and (max-width : 1250px) {\r\n\tself {\r\n\t\twidth: auto !important;\r\n\t}\r\n}",
-				"parentId": null,
-				"id": "xbo1EXfmJNrciEeYKj1S0"
-			},
-			{
-				"name": "respnsiveButton",
-				"content": "@media screen and (max-width : 500px) {\n\tself {\n\t\tfont-size: 10px !important;\n\t\twidth: auto;\n\t}\n}",
-				"parentId": null,
-				"id": "SpiDoWnhnC-YlMKqVR2z6"
-			}
-		],
+		"styles": [],
 		"states": [
 			{
 				"label": "Base",
 				"id": "root"
 			},
 			{
-				"label": "isConnected",
+				"label": "isAdmin",
 				"id": "hVAqXjJ8v2n2ijRWiHpr3W",
 				"conditions": {
 					"id": "5B4LDA2tdvhvD6EJVp8yWB",
-					"type": "datasource",
-					"name": "condition",
-					"value": "",
-					"valueType": "hardCoded",
-					"path": "Shared:currentUser",
-					"dsType": "entity",
-					"op": "notnull"
+					"type": "combination",
+					"op": "or",
+					"conditions": [
+						{
+							"id": "hDsn3FR4DHVNcXusXkNS2g",
+							"type": "combination",
+							"op": "and",
+							"conditions": [
+								{
+									"id": "hMygKLmCqHBwiMi9175aUY",
+									"type": "privilege",
+									"name": "condition",
+									"value": "organize",
+									"valueType": "hardCoded",
+									"path": "Shared:currentUser",
+									"dsType": "entity",
+									"op": "eq"
+								},
+								{
+									"id": "x1XqNkz2pK8Ce6UMJBAyZp",
+									"type": "privilege",
+									"name": "condition",
+									"value": "visit",
+									"valueType": "hardCoded",
+									"op": "eq"
+								}
+							]
+						},
+						{
+							"id": "o4b9ahv5kyHrGtovSrxP4z",
+							"type": "combination",
+							"op": "and",
+							"conditions": [
+								{
+									"id": "gDEjFb8dzeYZ3K8S8syYeW",
+									"type": "privilege",
+									"name": "condition",
+									"value": "commercial",
+									"valueType": "hardCoded",
+									"op": "eq"
+								},
+								{
+									"id": "2QGyfiaCbkdDHyZHBeABRy",
+									"type": "privilege",
+									"name": "condition",
+									"value": "visit",
+									"valueType": "hardCoded",
+									"op": "eq"
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"label": "isClient",
+				"id": "vnmgerxGnu596VTVTYii8v",
+				"conditions": {
+					"id": "uY9N5HzKsUHssHa7UaDSHN",
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "uhMpM6BVZBcB4jmDvgn2bX",
+							"type": "privilege",
+							"name": "condition",
+							"value": "visit",
+							"valueType": "hardCoded",
+							"op": "eq"
+						},
+						{
+							"id": "sqWA9wu1JhoZBn1m89tdFw",
+							"type": "privilege",
+							"name": "condition",
+							"value": "organize",
+							"valueType": "hardCoded",
+							"op": "neq"
+						},
+						{
+							"id": "uBU3E3KttFnYbubQvgN9uu",
+							"type": "privilege",
+							"name": "condition",
+							"value": "commercial",
+							"valueType": "hardCoded",
+							"op": "neq"
+						}
+					]
 				}
 			}
 		]
@@ -69,11 +136,17 @@
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
 					"display": "flex",
-					"flexDirection": "column"
+					"flexDirection": "column",
+					"justifyContent": "center",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Page",
-			"custom": {},
+			"custom": {
+				"states:vnmgerxGnu596VTVTYii8v": {
+					"style": {}
+				}
+			},
 			"parent": "",
 			"hidden": false,
 			"nodes": [
@@ -93,14 +166,19 @@
 				"style": {
 					"display": "flex",
 					"flexDirection": "column",
-					"width": "100%",
+					"width": "70%",
 					"gap": "21px",
-					"height": "100%"
+					"height": "fit-content"
 				}
 			},
 			"displayName": "Stylebox",
 			"custom": {
 				"states:hVAqXjJ8v2n2ijRWiHpr3W": {
+					"style": {
+						"display": "none"
+					}
+				},
+				"states:vnmgerxGnu596VTVTYii8v": {
 					"style": {
 						"display": "none"
 					}
@@ -229,10 +307,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Email",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Email"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -266,7 +345,8 @@
 				"dataType": "string",
 				"classNames": [],
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -345,10 +425,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Password",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Password"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -382,7 +463,8 @@
 				"dataType": "string",
 				"classNames": [],
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -401,24 +483,16 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "31vzqYWAm2CgFRZjZ3UL82",
+						"type": "navigation",
+						"id": "rjTHJT8kkSWLUnPzv2oqjh",
 						"events": [
 							"onclick"
 						],
-						"action": "set",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "publicAccess",
-							"from": "",
-							"type": "scalar",
-							"namespace": "Shared",
-							"dataType": "string",
-							"set": {
-								"value": "resetPwd",
-								"type": "string"
-							}
-						}
+						"externalLink": false,
+						"loader": "",
+						"parent": "same-tab",
+						"target": "resetPwd",
+						"isHardCoded": true
 					}
 				],
 				"iconPosition": "hidden",
@@ -507,29 +581,29 @@
 						"events": [
 							"onclick"
 						],
-						"id": "gXaPpK8wGvp23qb2wSSeam",
-						"method": "ds.login",
+						"id": "umCXt8zRSAJthqbknf3YJt",
+						"method": "ds.authentify",
 						"params": [
 							{
 								"name": "email",
-								"type": "string",
+								"type": "Text",
 								"datasource": "email",
-								"id": "4UbDLBsDmZG4YNRntvjHfn"
+								"id": "qKFvafhg85QjKfPpG2S86d"
 							},
 							{
 								"name": "password",
-								"type": "string",
+								"type": "Text",
 								"datasource": "pwd",
-								"id": "nhop1E2U9fBzQyYZy6Gzkr"
+								"id": "cvQZzDvhSaNVPAkp7gt4Uj"
 							}
 						],
 						"datasource": "",
+						"allowedOnHTTPGET": false,
 						"returns": {
 							"name": "result",
 							"type": "cs.EmployeeEntity",
 							"datasource": "Shared:currentUser"
-						},
-						"feedback": true
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -670,24 +744,16 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "vsT3QVqtJPrECBAuEnHjv4",
+						"type": "navigation",
+						"id": "gebx2kymPB2eVYLKw5Jmyg",
 						"events": [
 							"onclick"
 						],
-						"action": "set",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "publicAccess",
-							"type": "scalar",
-							"from": "",
-							"namespace": "Shared",
-							"dataType": "string",
-							"set": {
-								"value": "signIn",
-								"type": "string"
-							}
-						}
+						"externalLink": false,
+						"loader": "",
+						"parent": "same-tab",
+						"target": "signIn",
+						"isHardCoded": true
 					}
 				],
 				"iconPosition": "hidden",
@@ -753,7 +819,14 @@
 				"webform": "Home"
 			},
 			"displayName": "Page Loader",
-			"custom": {},
+			"custom": {
+				"states:hVAqXjJ8v2n2ijRWiHpr3W": {
+					"webform": "dashHome"
+				},
+				"states:vnmgerxGnu596VTVTYii8v": {
+					"webform": "PublicAccess"
+				}
+			},
 			"parent": "uq_o-9V-5-",
 			"hidden": false,
 			"nodes": [],
@@ -780,6 +853,11 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"states:hVAqXjJ8v2n2ijRWiHpr3W": {
+					"style": {
+						"display": "flex"
+					}
+				},
+				"states:vnmgerxGnu596VTVTYii8v": {
 					"style": {
 						"display": "flex"
 					}

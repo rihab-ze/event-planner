@@ -493,10 +493,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Ends At",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
 				"deletable": true,
-				"text": "Ends At",
 				"style": {
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
@@ -562,7 +563,10 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"dataType": "date"
+				"dataType": "date",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -608,10 +612,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Starts At",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
 				"deletable": true,
-				"text": "Starts At",
 				"style": {
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
@@ -677,7 +682,10 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"dataType": "date"
+				"dataType": "date",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -720,9 +728,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Location",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Location",
 				"style": {
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
@@ -786,7 +795,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -831,9 +843,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Country",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Country",
 				"style": {
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
@@ -867,7 +880,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -912,9 +928,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Name<br>",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Name<br>",
 				"style": {
 					"fontSize": "16px",
 					"fontWeight": "inherit",
@@ -982,7 +999,10 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"serverSideRef": "nameE"
+				"serverSideRef": "nameE",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1056,9 +1076,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "City",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "City",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -1092,7 +1113,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1510,9 +1534,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "First Address ",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "First Address ",
 				"style": {
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
@@ -1546,7 +1571,10 @@
 					"fontSize": "16px",
 					"fontWeight": "500",
 					"color": "#353D66"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1592,9 +1620,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Second Address ",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Second Address ",
 				"style": {
 					"color": "#A5A5A5",
 					"fontSize": "16px",
@@ -1628,7 +1657,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1673,9 +1705,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Zip Code",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Zip Code",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -1709,7 +1742,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1848,6 +1884,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavEmployees"
 					}
 				],
@@ -3217,9 +3254,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "State",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "State",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -3253,7 +3291,10 @@
 					"fontSize": "16px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4361,7 +4402,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -4471,7 +4513,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -4579,7 +4622,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -4917,6 +4961,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavSessions"
 					}
 				],
@@ -5153,7 +5198,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5292,7 +5338,8 @@
 							"target": "address1",
 							"targetNamespace": "",
 							"type": "object",
-							"from": ""
+							"from": "",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5311,7 +5358,7 @@
 							"from": "",
 							"target": "address2",
 							"targetNamespace": "",
-							"targetType": "string"
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -5327,7 +5374,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "city",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5344,7 +5392,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "zipCode",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5361,7 +5410,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "state",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5575,6 +5625,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavStand"
 					}
 				],
@@ -5700,6 +5751,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavSponsors"
 					}
 				],
@@ -5765,7 +5817,8 @@
 						],
 						"externalLink": false,
 						"loader": "",
-						"parent": "",
+						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavSponsors"
 					}
 				],
@@ -6320,13 +6373,14 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
 				"style": {
 					"display": "none"
 				},
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -6389,7 +6443,10 @@
 				"format": "l",
 				"dataType": "string",
 				"datasource": "eventActor.biography",
-				"serverSideRef": "biography"
+				"serverSideRef": "biography",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -7844,9 +7901,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Price",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -7909,7 +7967,10 @@
 				"placeholder": "Price",
 				"moveable": false,
 				"readonly": false,
-				"serverSideRef": "price"
+				"serverSideRef": "price",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -7948,9 +8009,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Floor",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Floor",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -8014,7 +8076,10 @@
 					"paddingLeft": "12px",
 					"borderRadius": "6px"
 				},
-				"serverSideRef": "kind"
+				"serverSideRef": "kind",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -8052,9 +8117,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Size",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Size",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -8120,7 +8186,10 @@
 					"marginTop": "12px"
 				},
 				"serverSideRef": "size",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -8290,9 +8359,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Kind",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Kind",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -8355,7 +8425,10 @@
 				"datasource": "newSponsor.kind",
 				"moveable": false,
 				"readonly": false,
-				"serverSideRef": "kind"
+				"serverSideRef": "kind",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -8393,10 +8466,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "MoreInfo",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "MoreInfo"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -8457,7 +8531,10 @@
 				"readonly": false,
 				"datasource": "contact",
 				"dataType": "string",
-				"serverSideRef": "contact"
+				"serverSideRef": "contact",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -8495,10 +8572,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Price"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -8561,7 +8639,10 @@
 				"format": "#,##0.00$",
 				"dataType": "number",
 				"datasource": "newSponsor.price",
-				"serverSideRef": "price"
+				"serverSideRef": "price",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -9228,9 +9309,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "First Name",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "First Name",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -9267,7 +9349,10 @@
 					"borderTopWidth": "0px",
 					"borderRightWidth": "0px",
 					"borderLeftWidth": "0px"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -9312,9 +9397,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Last Name",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Last Name",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -9351,7 +9437,10 @@
 					"borderTopWidth": "0px",
 					"borderRightWidth": "0px",
 					"borderLeftWidth": "0px"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

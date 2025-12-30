@@ -87,14 +87,6 @@
 				]
 			},
 			{
-				"id": "inscreptions",
-				"type": "entitysel",
-				"dataclass": "Inscription",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
-			},
-			{
 				"id": "eventSelection",
 				"type": "scalar",
 				"namespace": "",
@@ -132,13 +124,6 @@
 				"scope": "local"
 			},
 			{
-				"name": "colorO",
-				"content": "self {\nbackground: linear-gradient(180deg, #F3C88E 0%, rgba(249, 222, 186, 0.00) 100%);\n}",
-				"parentId": null,
-				"id": "-8Z9mp5dklxTnULslJae0",
-				"scope": "local"
-			},
-			{
 				"name": "topButton",
 				"content": "self {\nposition: absolute !important;\n}\n/* self:focus{\n\tz-index: 1;\n\tbackground-color: #ffffff !important;\n\tborder: 1px solid #353D66; \n}\nself:focus ~ .downButton{\n\tposition: relative;\n\ttop:0 !important;\n\tbottom: 0 !important;\n\tbackground-color: #DEE2EC !important;\n\tborder: 0px !important;\n\tjustify-content: right !important;\n} */\n/* @media screen and (max-width:920px) {\n\nself {\n\twidth: 61.5px !important;\n} \n\n\n} */",
 				"parentId": null,
@@ -153,24 +138,10 @@
 				"scope": "local"
 			},
 			{
-				"name": "focusButton",
-				"content": "self {\n\tposition:absolute ;\n\tz-index: 1;\n\tbackground-color: #ffffff !important;\n\tborder: 1px solid #5863F6;\n\tjustify-content: center !important;\n}\nself ~ button{\n\tposition: relative;\n\ttop:0 !important;\n\tbottom: 0 !important;\n\tbackground-color: #DEE2EC !important;\n\tborder: 0px !important;\n\tjustify-content: right !important;\n}\n/* self ~ button{\n\tposition: relative;\n\ttop:0 !important;\n\tbottom: 0 !important;\n\tbackground-color: #DEE2EC !important;\n\tborder: 0px !important;\n\tjustify-content: right !important;\n} */",
-				"parentId": null,
-				"id": "EE3ZUm0gqJ-jJrwzoHxyD",
-				"scope": "local"
-			},
-			{
 				"name": "mediaQuery",
 				"content": "@media screen and (max-width:920px) {\n\nself {\n\twidth: 100px !important;\n} \nself .topButton{\n\twidth: 60% !important;\n}\nself .downButton{\n\twidth: 60% !important;\n\tleft: 40% !important;\n}\n\n}",
 				"parentId": null,
 				"id": "5NGka74iImpRpMFmw8-Pp",
-				"scope": "local"
-			},
-			{
-				"name": "visibleCss",
-				"content": "@media screen and (max-width:920px) {\n\nself .visibility{\n\tdisplay: flex !important;\n}\nself .downBtutton{\n\tdisplay: none !important;\n}\nself .ttopButton{\n\tdisplay: none !important;\n} \n}",
-				"parentId": null,
-				"id": "pI41KxQ9_xBq98Qw1HbDW",
 				"scope": "local"
 			}
 		]
@@ -364,7 +335,7 @@
 					"position": "static"
 				}
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -388,7 +359,6 @@
 					"marginLeft": "0px",
 					"backgroundImage": "url(/$Shared/assets/images/main.png)",
 					"width": "50%",
-					"height": "100%",
 					"paddingLeft": "0px",
 					"display": "flex",
 					"flexDirection": "column",
@@ -397,7 +367,8 @@
 				},
 				"classNames": [
 					"flex-grow"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -433,8 +404,10 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
-				}
+					"paddingLeft": "0px",
+					"height": "auto"
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -458,7 +431,8 @@
 					"justifyContent": "flex-end",
 					"marginRight": "0px",
 					"paddingRight": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -544,14 +518,15 @@
 					},
 					{
 						"type": "navigation",
-						"id": "rp3Am1vfepmm7VDY2ksHdQ",
+						"id": "wTxpSSP4sSQxdxiXnRRyke",
 						"events": [
 							"onclick"
 						],
 						"externalLink": false,
 						"loader": "57svfU-dqo",
 						"parent": "webform-loader",
-						"target": "addEvent"
+						"target": "addEvent",
+						"isHardCoded": true
 					}
 				],
 				"iconPosition": "left",
@@ -631,7 +606,8 @@
 				},
 				"classNames": [
 					"max_content"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -664,7 +640,8 @@
 				},
 				"classNames": [
 					"colorG"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -706,7 +683,8 @@
 				},
 				"classNames": [
 					"max-content"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -762,7 +740,8 @@
 				},
 				"classNames": [
 					"max-content"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -794,7 +773,8 @@
 				},
 				"classNames": [
 					"colorR"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -836,7 +816,8 @@
 				},
 				"classNames": [
 					"max-content"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -892,7 +873,8 @@
 				},
 				"classNames": [
 					"max-content"
-				]
+				],
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -918,7 +900,8 @@
 					"alignItems": "center"
 				},
 				"serverSideRef": "eventSearch",
-				"classNames": []
+				"classNames": [],
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -950,7 +933,8 @@
 					"borderTopRightRadius": "4px",
 					"borderBottomRightRadius": "4px"
 				},
-				"serverSideRef": "Text Input"
+				"serverSideRef": "Text Input",
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -968,13 +952,14 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Search",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
 				"style": {
 					"display": "none"
 				},
-				"deletable": true,
-				"text": "Search"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1005,7 +990,11 @@
 				"moveable": false,
 				"readonly": false,
 				"datasource": "search",
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1035,8 +1024,9 @@
 						"externalLink": false,
 						"loader": "57svfU-dqo",
 						"parent": "webform-loader",
-						"target": "editEvent",
-						"disabled": false
+						"disabled": false,
+						"isHardCoded": true,
+						"target": "editEvent"
 					},
 					{
 						"type": "method",
@@ -1418,7 +1408,8 @@
 					}
 				],
 				"currentElement": "Shared:selectedEvent",
-				"serverSideRef": "eventTab"
+				"serverSideRef": "eventTab",
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -1440,7 +1431,7 @@
 					"visibility"
 				]
 			},
-			"displayName": "Webform Loader",
+			"displayName": "Page Loader",
 			"custom": {},
 			"parent": "IkCNiIzRtB",
 			"hidden": false,
@@ -1462,10 +1453,11 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"minHeight": "auto"
 				}
 			},
-			"displayName": "Webform Loader",
+			"displayName": "Page Loader",
 			"custom": {},
 			"parent": "IkCNiIzRtB",
 			"hidden": false,
@@ -1488,7 +1480,8 @@
 					"justifyContent": "flex-end",
 					"paddingRight": "0px",
 					"marginRight": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1512,7 +1505,8 @@
 					"width": "65%",
 					"paddingLeft": "0px",
 					"marginBottom": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1542,7 +1536,8 @@
 					"visibility",
 					"flex-grow"
 				],
-				"serverSideRef": "noEventImg"
+				"serverSideRef": "noEventImg",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -1603,7 +1598,8 @@
 					"fontWeight": "500",
 					"color": "#5863F6",
 					"width": "fit-content"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -1750,7 +1746,8 @@
 				"classNames": [
 					"mediaQuery"
 				],
-				"serverSideRef": "testResponsive"
+				"serverSideRef": "testResponsive",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},

@@ -269,6 +269,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "dashHome"
 					}
 				],
@@ -456,7 +457,8 @@
 					"marginTop": "0px",
 					"marginLeft": "0px",
 					"display": "flex",
-					"flexDirection": "column"
+					"flexDirection": "column",
+					"alignItems": "start"
 				}
 			},
 			"displayName": "Stylebox",
@@ -464,8 +466,76 @@
 			"parent": "LNTWK5ZmOq",
 			"hidden": false,
 			"nodes": [
-				"haFsAAyWH_"
+				"haFsAAyWH_",
+				"0_KfIAbqG7"
 			],
+			"linkedNodes": {}
+		},
+		"0_KfIAbqG7": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Log out",
+				"classNames": [],
+				"events": [
+					{
+						"type": "qodly-pro-action",
+						"id": "g4ac6nFXNJCxYs6vLcZMnK",
+						"events": [
+							"onclick"
+						],
+						"actionType": "auth",
+						"action": "logout"
+					}
+				],
+				"iconPosition": "left",
+				"style": {
+					"display": "flex",
+					"paddingRight": "0px",
+					"paddingBottom": "0px",
+					"paddingTop": "0px",
+					"paddingLeft": "0px",
+					"gap": "0px",
+					"color": "#5863F6",
+					"backgroundColor": "transparent",
+					"marginRight": "0px",
+					"marginBottom": "0px",
+					"marginTop": "0px",
+					"marginLeft": "0px"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "Y2VERITRza",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "SpvmRUuOwO"
+			}
+		},
+		"SpvmRUuOwO": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-arrow-right-from-bracket",
+				"style": {
+					"marginRight": "0px",
+					"marginBottom": "8px",
+					"marginTop": "8px",
+					"marginLeft": "0px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "0_KfIAbqG7",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}

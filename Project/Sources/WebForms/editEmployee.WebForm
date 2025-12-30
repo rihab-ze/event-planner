@@ -149,9 +149,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Second address :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Second address :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -215,7 +216,10 @@
 					"height": "36px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -259,9 +263,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "State :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "State :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -325,7 +330,11 @@
 					"height": "36px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -541,9 +550,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Last Name:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Last Name:",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -578,7 +588,11 @@
 					"fontWeight": "500"
 				},
 				"classNames": [],
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -797,9 +811,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "City:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "City:",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -863,7 +878,11 @@
 					"height": "36px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -907,9 +926,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "ZipCode:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "ZipCode:",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -973,7 +993,11 @@
 					"height": "36px",
 					"color": "#353D66",
 					"fontWeight": "500"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1034,7 +1058,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "first",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1051,7 +1076,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "second",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1068,7 +1094,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "city",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1085,7 +1112,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "zipCode",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1102,7 +1130,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "state",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1119,7 +1148,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "phone",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						},
 						"disabled": false
 					},
@@ -1406,9 +1436,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Name:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Name:",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -1443,7 +1474,11 @@
 					"fontWeight": "500"
 				},
 				"classNames": [],
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1485,9 +1520,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "First address :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "First address :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -1552,7 +1588,11 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1567,10 +1607,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1591,7 +1632,10 @@
 				"type": "text",
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1662,9 +1706,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Role :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Role :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -1713,7 +1758,8 @@
 						"returns": {
 							"name": "$0",
 							"type": "Variable"
-						}
+						},
+						"disabled": false
 					}
 				],
 				"deletable": false,
@@ -1729,7 +1775,11 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1904,7 +1954,7 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"contentWidth": 486,
-				"contentHeight": 36
+				"contentHeight": 35
 			},
 			"parent": "GyzHcXAkSY",
 			"hidden": false,
@@ -2101,9 +2151,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Phone :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Phone :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -2138,7 +2189,11 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"readOnly": false
+				"readOnly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2181,9 +2236,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "E-mail :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "E-mail :",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -2217,7 +2273,11 @@
 					"color": "#353D66",
 					"fontWeight": "500"
 				},
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2460,17 +2520,6 @@
 							"name": "$0",
 							"type": "Variable"
 						}
-					},
-					{
-						"type": "navigation",
-						"id": "nPzdbcHjpFSPBugZwQNoVJ",
-						"events": [
-							"onclick"
-						],
-						"externalLink": false,
-						"loader": "",
-						"parent": "same-tab",
-						"target": "NavEmployees"
 					}
 				],
 				"style": {
@@ -2535,6 +2584,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "dashHome"
 					}
 				],

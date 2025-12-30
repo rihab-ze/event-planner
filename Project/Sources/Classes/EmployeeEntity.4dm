@@ -33,7 +33,7 @@ exposed Function update($address1 : Text; $address2 : Text; $city : Text; $zipCo
 	var $status : Boolean:=False:C215
 	This:C1470.address:=New object:C1471("first"; $address1; "second"; $address2; "city"; $city; "zipCode"; $zipCode; "state"; $state)
 	$status:=This:C1470.checkParams()
-	If (Not:C34($status))
+	If ($status)
 		Web Form:C1735.setError("Fill the required fields!")
 	Else 
 		$saved:=This:C1470.save()

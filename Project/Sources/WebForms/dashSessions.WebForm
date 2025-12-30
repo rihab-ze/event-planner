@@ -3,15 +3,6 @@
 		"v": "1.0",
 		"datasources": [
 			{
-				"id": "events",
-				"type": "entitysel",
-				"dataclass": "Event",
-				"namespace": "",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
-			},
-			{
 				"id": "event",
 				"type": "entity",
 				"dataclass": "Event",
@@ -269,7 +260,8 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"overflow": "hidden"
 				}
 			},
 			"displayName": "Page",
@@ -298,11 +290,11 @@
 					"borderTopLeftRadius": "8px",
 					"borderBottomLeftRadius": "8px",
 					"width": "50%",
-					"overflow": "scroll",
 					"paddingLeft": "0px",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
-					"paddingTop": "0px"
+					"paddingTop": "0px",
+					"overflow": "visible"
 				},
 				"serverSideRef": "",
 				"iterableChild": true
@@ -323,10 +315,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -345,7 +338,8 @@
 				"deletable": false,
 				"className": "fd-select",
 				"moveable": false,
-				"options": []
+				"options": [],
+				"showEmptyOption": true
 			},
 			"displayName": "Select",
 			"custom": {},
@@ -469,14 +463,15 @@
 				"events": [
 					{
 						"type": "navigation",
-						"id": "sYuzKtNg2DnWkMJJz2XqnM",
+						"id": "qfcQC123REfGSSPzUVLFTv",
 						"events": [
 							"onselect"
 						],
 						"externalLink": false,
 						"loader": "uxSxgSHWwo",
 						"parent": "webform-loader",
-						"target": "editSessionNew"
+						"target": "editSessionNew",
+						"isHardCoded": true
 					},
 					{
 						"type": "method",
@@ -734,7 +729,7 @@
 					"backgroundColor": "#ffffffff",
 					"textAlign": "start",
 					"borderRadius": "10px",
-					"height": "fit-content",
+					"height": "70%",
 					"fontWeight": "500",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
@@ -745,7 +740,9 @@
 					"marginTop": "0px",
 					"marginRight": "0px",
 					"marginBottom": "0px",
-					"marginLeft": "0px"
+					"marginLeft": "0px",
+					"minHeight": "70%",
+					"maxHeight": "70%"
 				},
 				"headerHeight": 59,
 				"rowHeight": 54,
@@ -788,7 +785,8 @@
 					}
 				],
 				"currentElement": "Shared:selectedSession",
-				"serverSideRef": "sessionTable"
+				"serverSideRef": "sessionTable",
+				"iterableChild": true
 			},
 			"displayName": "DataTable",
 			"custom": {},
@@ -820,7 +818,8 @@
 					"alignItems": "center",
 					"backgroundImage": "url(/$shared/assets/images/main.png)",
 					"backgroundSize": "cover",
-					"backgroundRepeat": "space"
+					"backgroundRepeat": "space",
+					"overflow": "hidden"
 				},
 				"iterableChild": true
 			},
@@ -843,10 +842,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -867,7 +867,10 @@
 				"type": "text",
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -882,10 +885,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -906,7 +910,10 @@
 				"type": "text",
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -951,9 +958,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "SearchSession",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "SearchSession",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -984,7 +992,10 @@
 				"moveable": false,
 				"readonly": false,
 				"dataType": "string",
-				"serverSideRef": "filter"
+				"serverSideRef": "filter",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1020,10 +1031,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Label",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Label"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1042,7 +1054,8 @@
 				"deletable": false,
 				"className": "fd-select",
 				"moveable": false,
-				"options": []
+				"options": [],
+				"showEmptyOption": true
 			},
 			"displayName": "Select",
 			"custom": {},
@@ -1097,7 +1110,9 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"overflow": "visible",
+					"height": "100%"
 				},
 				"serverSideRef": "editLoader"
 			},
@@ -1183,14 +1198,15 @@
 					},
 					{
 						"type": "navigation",
-						"id": "4a6AiYk5X9YDLRPAE9PMkC",
+						"id": "rjdHj6zh9jYqeGPdoWKoYZ",
 						"events": [
 							"onclick"
 						],
 						"externalLink": false,
 						"loader": "uxSxgSHWwo",
 						"parent": "webform-loader",
-						"target": "addSession"
+						"target": "addSession",
+						"isHardCoded": true
 					}
 				],
 				"iconPosition": "left",

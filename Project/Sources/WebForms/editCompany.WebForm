@@ -53,13 +53,6 @@
 				"initialValue": "StandCompany"
 			},
 			{
-				"id": "companyDc",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": "Company"
-			},
-			{
 				"id": "employeeDc",
 				"type": "scalar",
 				"namespace": "",
@@ -285,9 +278,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Second address",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Second address",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -354,7 +348,11 @@
 					"fontWeight": "500",
 					"fontSize": "16px"
 				},
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -549,7 +547,8 @@
 							"target": "address1",
 							"targetNamespace": "",
 							"type": "object",
-							"from": ""
+							"from": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -565,7 +564,8 @@
 							"target": "address2",
 							"targetNamespace": "",
 							"type": "object",
-							"from": ""
+							"from": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -581,7 +581,8 @@
 							"target": "city",
 							"targetNamespace": "",
 							"type": "object",
-							"from": ""
+							"from": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -597,7 +598,8 @@
 							"target": "zipCode",
 							"targetNamespace": "",
 							"type": "object",
-							"from": ""
+							"from": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -613,7 +615,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "state",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -869,9 +872,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Country",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Country",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -936,7 +940,10 @@
 					"color": "#353D66",
 					"fontWeight": "500",
 					"fontSize": "16px"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1011,9 +1018,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Name",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Name",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -1080,7 +1088,11 @@
 					"fontWeight": "500",
 					"fontSize": "16px"
 				},
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1124,9 +1136,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "first address",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "first address",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -1192,7 +1205,11 @@
 					"fontWeight": "500",
 					"fontSize": "16px"
 				},
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1944,9 +1961,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "ZipCode",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "ZipCode",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -1982,7 +2000,10 @@
 					"color": "#353D66",
 					"fontWeight": "500",
 					"fontSize": "16px"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2026,9 +2047,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "State",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "State",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -2095,7 +2117,11 @@
 					"fontWeight": "500",
 					"fontSize": "16px"
 				},
-				"dataType": "string"
+				"dataType": "string",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2139,9 +2165,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "City",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "City",
 				"deletable": true,
 				"style": {
 					"color": "#A5A5A5",
@@ -2207,7 +2234,11 @@
 					"color": "#353D66",
 					"fontWeight": "500",
 					"fontSize": "16px"
-				}
+				},
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right",
+				"intervals": []
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2645,6 +2676,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavStand"
 					}
 				],
@@ -2843,7 +2875,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -3123,6 +3156,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavSponsors"
 					}
 				],
@@ -3414,7 +3448,8 @@
 							"namespace": "Shared",
 							"target": "dropUUID",
 							"targetNamespace": "Shared",
-							"type": "uuid"
+							"type": "uuid",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -3622,7 +3657,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -3857,6 +3893,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavEmployees"
 					}
 				],
@@ -3933,11 +3970,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
+								"text": ""
 							},
 							{
 								"type": "datasource",
@@ -3968,7 +4001,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "yTDJb-1vfK",
 			"hidden": false,
 			"nodes": [],
@@ -5162,10 +5199,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "MoreInfo",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "MoreInfo"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -5226,7 +5264,10 @@
 				"readonly": false,
 				"datasource": "contact",
 				"dataType": "string",
-				"serverSideRef": "contact"
+				"serverSideRef": "contact",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -5939,9 +5980,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Kind",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Kind",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -6003,7 +6045,10 @@
 				"datasource": "newSponsor.kind",
 				"moveable": false,
 				"readonly": false,
-				"serverSideRef": "kind"
+				"serverSideRef": "kind",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6109,7 +6154,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6133,7 +6181,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6183,7 +6234,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6207,7 +6261,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6222,10 +6279,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Price"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -6287,7 +6345,10 @@
 				"datasource": "newSponsor.price",
 				"format": "#,##0.00$",
 				"dataType": "number",
-				"serverSideRef": "price"
+				"serverSideRef": "price",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6369,9 +6430,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Size",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Size",
 				"deletable": true
 			},
 			"displayName": "Label",
@@ -6433,7 +6495,10 @@
 				"placeholder": "size",
 				"moveable": false,
 				"readonly": false,
-				"serverSideRef": "size"
+				"serverSideRef": "size",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6457,7 +6522,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6481,7 +6549,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6505,7 +6576,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6529,7 +6603,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6582,7 +6659,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6606,7 +6686,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6630,7 +6713,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6654,7 +6740,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6669,10 +6758,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Price"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -6734,7 +6824,10 @@
 				"datasource": "stand.price",
 				"format": "#,##0.00$",
 				"dataType": "number",
-				"serverSideRef": "price"
+				"serverSideRef": "price",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6787,7 +6880,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6811,7 +6907,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6835,7 +6934,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6859,7 +6961,10 @@
 				},
 				"moveable": false,
 				"placeholder": "",
-				"readonly": false
+				"readonly": false,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -6874,10 +6979,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Floor",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Floor"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -6937,7 +7043,10 @@
 				"placeholder": "floor",
 				"readonly": false,
 				"datasource": "stand.floor",
-				"serverSideRef": "floor"
+				"serverSideRef": "floor",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

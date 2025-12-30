@@ -47,7 +47,7 @@
 					"flexDirection": "column"
 				}
 			},
-			"displayName": "Webform",
+			"displayName": "Page",
 			"custom": {},
 			"parent": "",
 			"hidden": false,
@@ -73,7 +73,8 @@
 					"paddingRight": "0px",
 					"marginLeft": "0px",
 					"paddingBottom": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -115,7 +116,8 @@
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
 					"marginBottom": "4px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -183,7 +185,8 @@
 					"marginLeft": "0px",
 					"color": "#353D66",
 					"height": "36px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -222,7 +225,8 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -269,7 +273,8 @@
 				"datasource": "$This.name",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -292,7 +297,8 @@
 					"marginLeft": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -334,7 +340,8 @@
 					"color": "#A5A5A5",
 					"fontWeight": "inherit",
 					"marginBottom": "4px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -401,7 +408,8 @@
 					"marginLeft": "0px",
 					"color": "#353D66",
 					"height": "36px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {
@@ -440,7 +448,8 @@
 				"datasource": "",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -487,7 +496,8 @@
 				"datasource": "$This.name",
 				"style": {
 					"fontSize": "16px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -513,7 +523,8 @@
 					"marginRight": "0px",
 					"gap": "4px",
 					"marginTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -531,9 +542,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Kind :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Kind :",
 				"style": {
 					"fontSize": "16px",
 					"fontWeight": "inherit",
@@ -568,7 +580,10 @@
 					"fontSize": "16px",
 					"fontWeight": "500"
 				},
-				"serverSideRef": "kind"
+				"serverSideRef": "kind",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -592,7 +607,8 @@
 					"paddingTop": "0px",
 					"width": "100%",
 					"marginLeft": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -622,7 +638,8 @@
 					"marginRight": "0px",
 					"gap": "4px",
 					"marginTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -640,9 +657,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Price :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Price :",
 				"style": {
 					"color": "#A5A5A5",
 					"fontSize": "16px",
@@ -679,7 +697,10 @@
 				},
 				"format": "#,##0.00 $",
 				"dataType": "number",
-				"serverSideRef": ""
+				"serverSideRef": "",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -703,7 +724,8 @@
 					"marginLeft": "0px",
 					"paddingRight": "0px"
 				},
-				"serverSideRef": "both"
+				"serverSideRef": "both",
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
@@ -738,7 +760,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "contact",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -859,7 +882,8 @@
 					"height": "auto",
 					"width": "auto",
 					"fontWeight": "500"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text",
 			"custom": {},
@@ -885,7 +909,8 @@
 					"marginRight": "0px",
 					"gap": "4px",
 					"marginTop": "0px"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Text Input",
 			"custom": {},
@@ -903,9 +928,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Contact :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Contact :",
 				"style": {
 					"color": "#A5A5A5",
 					"fontSize": "16px",
@@ -940,7 +966,10 @@
 					"fontSize": "16px",
 					"fontWeight": "500"
 				},
-				"serverSideRef": ""
+				"serverSideRef": "",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},

@@ -45,13 +45,6 @@
 				"parentId": null,
 				"id": "LfcVWGWUXcq3zUge5kZjk",
 				"scope": "local"
-			},
-			{
-				"name": "focusButton",
-				"content": "self {\n    position: absolute;\n\tbackground-color: #FFFFFF !important; \n\tcolor: #353D66 !important; \n\tborder: solid 1px #5863F6 !important;\n\tbox-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;\n    z-index: 3; \n}\n\nself ~.fd-button{\n\tbackground-color: #DEE2EC !important;\n\tborder: 0 !important;\n}",
-				"parentId": null,
-				"id": "9sPUbGq9io-rF0vgaUu_B",
-				"scope": "local"
 			}
 		],
 		"states": [
@@ -1494,7 +1487,7 @@
 					"height": "100px",
 					"borderStyle": "none"
 				},
-				"datasource": "Shared:selectedEvent.actors",
+				"datasource": "Shared:selectedEvent.eventActors",
 				"gridProps": {
 					"styleboxWidth": 266,
 					"styleboxHeight": 40,
@@ -1644,7 +1637,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "Shared:$This.fullName",
+								"datasource": "Shared:$This.employee.fullName",
 								"children": [
 									{
 										"text": "Jeremy Gareau",
@@ -1663,7 +1656,7 @@
 						]
 					}
 				],
-				"datasource": "Shared:$This.fullName",
+				"datasource": "Shared:$This.employee.fullName",
 				"style": {
 					"marginLeft": "0px",
 					"marginRight": "0px",
@@ -1676,7 +1669,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "VhPJDkCCjJ",
 			"hidden": false,
 			"nodes": [],
@@ -1818,8 +1815,9 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "webform-loader-self",
-						"target": "pageSessions",
-						"disabled": false
+						"disabled": false,
+						"isHardCoded": true,
+						"target": "pageSessions"
 					}
 				],
 				"style": {

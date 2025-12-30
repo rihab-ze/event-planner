@@ -25,21 +25,6 @@
 				"namespace": "",
 				"dataType": "object",
 				"initialValue": "first"
-			},
-			{
-				"id": "clientVisuals",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "array",
-				"initialValue": []
-			},
-			{
-				"id": "selectedClientVisual",
-				"type": "scalar",
-				"from": "clientVisuals",
-				"namespace": "",
-				"dataType": "object",
-				"initialValue": "first"
 			}
 		],
 		"styles": [
@@ -118,6 +103,41 @@
 			"props": {
 				"classNames": [],
 				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"oninit"
+						],
+						"id": "fUo3J7atmFvrXKxvjBmbhB",
+						"method": "ds.authentify",
+						"params": [
+							{
+								"name": "email",
+								"type": "Text",
+								"datasource": "",
+								"id": "rtVSjQik4V8Ag9dfNK4rjR",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": ""
+							},
+							{
+								"name": "password",
+								"type": "Text",
+								"datasource": "",
+								"id": "vZs37dqQFo7CG1nsixBF2R",
+								"isHardCoded": true,
+								"hardCodedType": "string",
+								"hardCodedValue": ""
+							}
+						],
+						"datasource": "",
+						"allowedOnHTTPGET": false,
+						"returns": {
+							"name": "result",
+							"type": "cs.EmployeeEntity"
+						}
+					},
 					{
 						"type": "method",
 						"dataclass": "DataStore",
@@ -519,6 +539,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "Main"
 					}
 				],
@@ -681,7 +702,6 @@
 					"width": "50%",
 					"borderRadius": "10px",
 					"borderStyle": "none",
-					"height": "100%",
 					"paddingLeft": "0px",
 					"paddingRight": "0px"
 				},
@@ -710,7 +730,6 @@
 				"events": [],
 				"style": {
 					"height": "100%",
-					"backgroundColor": "transparent",
 					"borderWidth": "0px",
 					"borderStyle": "none",
 					"width": "100%"

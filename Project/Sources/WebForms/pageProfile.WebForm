@@ -284,9 +284,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "First name:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "First name:",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -325,7 +326,8 @@
 				"dataType": "string",
 				"disabled": false,
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -367,9 +369,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Last name:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Last name:",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -405,7 +408,8 @@
 				"readOnly": true,
 				"disabled": false,
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -510,9 +514,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -548,7 +553,8 @@
 				"readOnly": true,
 				"disabled": true,
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -589,9 +595,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Role:",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Role:",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -629,7 +636,8 @@
 				"readOnly": true,
 				"disabled": true,
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -671,9 +679,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "E-mail :",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "E-mail :",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -708,7 +717,8 @@
 				"readOnly": true,
 				"disabled": true,
 				"revealPassword": true,
-				"eyePosition": "right"
+				"eyePosition": "right",
+				"twentyFourHours": true
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -753,16 +763,13 @@
 				],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "cwzp38vD6G9gyF7YSAxAZZ",
+						"type": "qodly-pro-action",
+						"id": "grZzh4CfhVpV7dMiZAVbBf",
 						"events": [
 							"onclick"
 						],
-						"action": "logout",
 						"actionType": "auth",
-						"datasource": {
-							"name": ""
-						}
+						"action": "logout"
 					},
 					{
 						"type": "navigation",

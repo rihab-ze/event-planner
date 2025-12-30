@@ -81,16 +81,6 @@
 		],
 		"styles": [
 			{
-				"name": "buttonStyle",
-				"content": "self:hover {\n  background-color:#3442a8!important ;\n}\n\nself:active{\n\tbackground-color: #4754d1!important;\n}",
-				"children": {
-					"icon": "tSPI9wF4zqQtw4QTTSXBX"
-				},
-				"parentId": null,
-				"origin": "pKmLpGpmBQ",
-				"id": "uS5nxAkZiNxU4r2Ajha7B"
-			},
-			{
 				"name": "inputStyle",
 				"content": "self {\n\tfont-size: 16px!important;\n\tfont-weight: 500!important;\n}",
 				"parentId": null,
@@ -113,7 +103,8 @@
 					"paddingLeft": "0px",
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
-					"paddingTop": "0px"
+					"paddingTop": "0px",
+					"overflow": "auto"
 				}
 			},
 			"displayName": "Page",
@@ -250,9 +241,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Session Name",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Session Name",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -320,7 +312,10 @@
 				},
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -361,9 +356,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Subject",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Subject",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -431,7 +427,10 @@
 				"classNames": [
 					"inputStyle"
 				],
-				"serverSideRef": "subject"
+				"serverSideRef": "subject",
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -475,9 +474,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Date",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Date",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -553,7 +553,10 @@
 				"dataType": "date",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -629,9 +632,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Starts At",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Starts At",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -699,7 +703,10 @@
 				"dataType": "duration",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -744,9 +751,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Ends At",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Ends At",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -813,7 +821,10 @@
 				"dataType": "duration",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -853,9 +864,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Abstract",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Abstract",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -890,7 +902,10 @@
 				},
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1152,6 +1167,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavEmployees"
 					}
 				],
@@ -1226,7 +1242,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "$This.employee.fullName",
+								"datasource": "Shared:$This.employee.fullName",
 								"children": [
 									{
 										"text": "$This.fullName"
@@ -1241,7 +1257,7 @@
 						]
 					}
 				],
-				"datasource": "$This.employee.fullName",
+				"datasource": "Shared:$This.employee.fullName",
 				"style": {
 					"marginRight": "6px",
 					"marginBottom": "6px",
@@ -1258,7 +1274,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "Te61ALflbA",
 			"hidden": false,
 			"nodes": [],
@@ -1337,7 +1357,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "$This.mission",
+								"datasource": "Shared:$This.mission",
 								"children": [
 									{
 										"bold": false,
@@ -1360,7 +1380,7 @@
 						]
 					}
 				],
-				"datasource": "$This.mission",
+				"datasource": "Shared:$This.mission",
 				"style": {
 					"marginRight": "6px",
 					"marginBottom": "6px",
@@ -1377,7 +1397,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "lGWHgLXTI3",
 			"hidden": false,
 			"nodes": [],
@@ -1787,9 +1811,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Event",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Event",
 				"style": {
 					"fontWeight": "inherit",
 					"fontSize": "16px",
@@ -1826,7 +1851,10 @@
 				"classNames": [
 					"inputStyle"
 				],
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -2119,6 +2147,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavEmployees"
 					}
 				],
@@ -2191,7 +2220,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "$This.employee.fullName",
+								"datasource": "Shared:$This.employee.fullName",
 								"children": [
 									{
 										"text": "$This.fullName"
@@ -2206,7 +2235,7 @@
 						]
 					}
 				],
-				"datasource": "$This.employee.fullName",
+				"datasource": "Shared:$This.employee.fullName",
 				"style": {
 					"marginRight": "6px",
 					"marginBottom": "6px",
@@ -2223,7 +2252,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "y1JWvpAQSH",
 			"hidden": false,
 			"nodes": [],
@@ -2423,6 +2456,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "NavEmployees"
 					}
 				],
@@ -2562,7 +2596,7 @@
 							},
 							{
 								"type": "datasource",
-								"datasource": "$This.employee.fullName",
+								"datasource": "Shared:$This.employee.fullName",
 								"children": [
 									{
 										"text": "$This.fullName"
@@ -2577,7 +2611,7 @@
 						]
 					}
 				],
-				"datasource": "$This.employee.fullName",
+				"datasource": "Shared:$This.employee.fullName",
 				"style": {
 					"marginRight": "6px",
 					"marginBottom": "6px",
@@ -2594,7 +2628,11 @@
 				"iterableChild": true
 			},
 			"displayName": "Text",
-			"custom": {},
+			"custom": {
+				"__t": {
+					"doc": []
+				}
+			},
 			"parent": "VAIYRbiS1Y",
 			"hidden": false,
 			"nodes": [],
@@ -2830,7 +2868,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "prerequisites",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -2846,7 +2885,8 @@
 							"namespace": "Shared",
 							"from": "",
 							"target": "hashtags",
-							"targetNamespace": ""
+							"targetNamespace": "",
+							"targetType": "unknown"
 						}
 					},
 					{
@@ -2995,9 +3035,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Language",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Language",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -3034,7 +3075,10 @@
 				"classNames": [
 					"inputStyle"
 				],
-				"readOnly": true
+				"readOnly": true,
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3758,9 +3802,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Level",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Level",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -3798,7 +3843,10 @@
 				"dataType": "string",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3842,9 +3890,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Resource Link",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Resource Link",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -3881,7 +3930,10 @@
 				"dataType": "string",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -3956,9 +4008,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Prerequisites",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Prerequisites",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -3996,7 +4049,10 @@
 				"dataType": "string",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4040,9 +4096,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Hashtags",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "Hashtags",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px",
@@ -4079,7 +4136,10 @@
 				"dataType": "string",
 				"classNames": [
 					"inputStyle"
-				]
+				],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -4109,7 +4169,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -4187,7 +4248,8 @@
 							"type": "uuid",
 							"namespace": "Shared",
 							"target": "dropUUID",
-							"targetNamespace": "Shared"
+							"targetNamespace": "Shared",
+							"targetType": "unknown"
 						},
 						"actionType": "datasource"
 					},
@@ -5140,9 +5202,10 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "<span style=\"font-size: 16px;\">Mission</span>",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"text": "<span style=\"font-size: 16px;\">Mission</span>",
 				"style": {
 					"fontWeight": "500",
 					"fontSize": "16px"
@@ -5224,7 +5287,8 @@
 				],
 				"datasource": "newTechnician.mission",
 				"moveable": false,
-				"serverSideRef": "missionT"
+				"serverSideRef": "missionT",
+				"showEmptyOption": true
 			},
 			"displayName": "Select",
 			"custom": {},

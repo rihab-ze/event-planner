@@ -12,13 +12,6 @@
 		],
 		"styles": [
 			{
-				"name": "demoButton",
-				"content": "self {\n\tcursor: pointer;\n  \tbackground-image: linear-gradient(to right, #cc75ca , #6a36ca);\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
-				"parentId": null,
-				"id": "0EWD1JaQLR1KVohcKu0Nz",
-				"scope": "local"
-			},
-			{
 				"name": "demoButton2",
 				"content": "self {\n\tcursor: pointer;\n  \tbackground-image: linear-gradient(to right, #6a36ca ,rgb(88, 99, 246));\n}\nself:hover {\n\topacity: 0.8;\n}\nself:active {\n\topacity: 1;\n}",
 				"parentId": null,
@@ -35,24 +28,7 @@
 			"isCanvas": true,
 			"props": {
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onload"
-						],
-						"id": "jWfUP1HtC8c8kwiZgFKuuC",
-						"method": "ds.returnLandingPage",
-						"params": [],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "string",
-							"datasource": "landingPage"
-						}
-					}
-				],
+				"events": [],
 				"className": "bg-white h-full w-full px-6",
 				"airyMode": false,
 				"style": {
@@ -86,6 +62,7 @@
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
+						"isHardCoded": true,
 						"target": "Home"
 					}
 				],
@@ -283,7 +260,8 @@
 				"classNames": [
 					"flex-grow"
 				],
-				"datasource": "landingPage"
+				"datasource": "",
+				"webform": "startPage"
 			},
 			"displayName": "Page Loader",
 			"custom": {},
@@ -525,15 +503,15 @@
 				"events": [
 					{
 						"type": "navigation",
-						"id": "v3oVJ7hNRsM2a9uDqCwdRz",
+						"id": "bHknrdWXt6E9LTbFrwGrDK",
 						"events": [
 							"onclick"
 						],
 						"externalLink": false,
 						"loader": "",
 						"parent": "same-tab",
-						"isHardCoded": false,
-						"target": "landingPage"
+						"target": "startPage",
+						"isHardCoded": true
 					}
 				],
 				"classNames": [

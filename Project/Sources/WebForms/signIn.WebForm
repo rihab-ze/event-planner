@@ -55,7 +55,10 @@
 					"paddingRight": "0px",
 					"paddingBottom": "0px",
 					"paddingTop": "0px",
-					"paddingLeft": "0px"
+					"paddingLeft": "0px",
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center"
 				}
 			},
 			"displayName": "Page",
@@ -79,7 +82,8 @@
 					"display": "flex",
 					"flexDirection": "column",
 					"gap": "21px",
-					"height": "100%"
+					"height": "fit-content",
+					"width": "70%"
 				}
 			},
 			"displayName": "Stylebox",
@@ -226,10 +230,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Email",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Email"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -262,7 +267,10 @@
 				"readonly": false,
 				"datasource": "email",
 				"dataType": "string",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -386,10 +394,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "FirstName",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "FirstName"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -422,7 +431,10 @@
 				"readonly": false,
 				"datasource": "firstName",
 				"dataType": "string",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -520,10 +532,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "LastName",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "LastName"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -556,7 +569,10 @@
 				"readonly": false,
 				"datasource": "lastName",
 				"dataType": "string",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -680,10 +696,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "Password",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "Password"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -716,7 +733,10 @@
 				"readonly": false,
 				"datasource": "password",
 				"dataType": "string",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -814,10 +834,11 @@
 			},
 			"isCanvas": false,
 			"props": {
+				"text": "ConfrimedPwd",
+				"classNames": [],
 				"events": [],
 				"moveable": false,
-				"deletable": true,
-				"text": "ConfrimedPwd"
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -850,7 +871,10 @@
 				"readonly": false,
 				"datasource": "confrimedPwd",
 				"dataType": "string",
-				"classNames": []
+				"classNames": [],
+				"revealPassword": true,
+				"twentyFourHours": true,
+				"eyePosition": "right"
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1079,27 +1103,16 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "simple-action",
-						"id": "vPMPRn9aiYztCAGYohFVXz",
+						"type": "navigation",
+						"id": "kCx8P8ZZ5SmWut7FxPUFm5",
 						"events": [
 							"onclick"
 						],
-						"action": "set",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "publicAccess",
-							"type": "scalar",
-							"from": "",
-							"namespace": "Shared",
-							"dataType": "string",
-							"set": {
-								"value": "login",
-								"type": "string"
-							},
-							"target": "login",
-							"targetNamespace": "",
-							"targetType": "unknown"
-						}
+						"externalLink": false,
+						"loader": "",
+						"parent": "same-tab",
+						"target": "login",
+						"isHardCoded": true
 					}
 				],
 				"iconPosition": "hidden",
