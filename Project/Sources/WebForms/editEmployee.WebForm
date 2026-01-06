@@ -1954,7 +1954,7 @@
 			"displayName": "Stylebox",
 			"custom": {
 				"contentWidth": 486,
-				"contentHeight": 35
+				"contentHeight": 36
 			},
 			"parent": "GyzHcXAkSY",
 			"hidden": false,
@@ -2372,7 +2372,8 @@
 					"marginLeft": "6px",
 					"fontWeight": "inherit",
 					"fontSize": "16px",
-					"width": "100%"
+					"width": "100%",
+					"cursor": "auto"
 				},
 				"classNames": [
 					"ellipsis"
@@ -2403,7 +2404,7 @@
 					"alignItems": "center",
 					"fontWeight": "500",
 					"height": "100%",
-					"cursor": "pointer"
+					"cursor": "auto"
 				},
 				"iterableChild": true
 			},
@@ -2498,30 +2499,7 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Employee",
-						"events": [
-							"onclick"
-						],
-						"id": "bDNJ5sPJxoFe8A7GMpGgTB",
-						"method": "ds.Employee.setElement",
-						"params": [
-							{
-								"name": "employee",
-								"type": "cs.EmployeeEntity",
-								"datasource": "Shared:$This.employee",
-								"id": "v9RgvqZvWP4bBmXf33AU4t"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						}
-					}
-				],
+				"events": [],
 				"style": {
 					"display": "flex",
 					"justifyContent": "flex-start",
@@ -2532,7 +2510,7 @@
 					"alignItems": "center",
 					"fontWeight": "500",
 					"height": "100%",
-					"cursor": "pointer"
+					"cursor": "auto"
 				},
 				"iterableChild": true
 			},
@@ -2552,42 +2530,7 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Event",
-						"events": [
-							"onclick"
-						],
-						"id": "uK5seRQnc16Tbq5ff8tfEw",
-						"method": "ds.Event.setElement",
-						"params": [
-							{
-								"name": "event",
-								"type": "cs.EventEntity",
-								"datasource": "Shared:$This",
-								"id": "dUzgHgDTtffUDQZPTqfU7b"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						}
-					},
-					{
-						"type": "navigation",
-						"id": "ijazByWBeADKeAZNMaSww2",
-						"events": [
-							"onclick"
-						],
-						"externalLink": false,
-						"loader": "",
-						"parent": "same-tab",
-						"isHardCoded": true,
-						"target": "dashHome"
-					}
-				],
+				"events": [],
 				"style": {
 					"display": "flex",
 					"backgroundColor": "#F0F1FC",

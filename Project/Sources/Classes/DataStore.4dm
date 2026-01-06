@@ -238,7 +238,16 @@ exposed Function authentify($email : Text; $password : Text) : cs:C1710.Employee
 				Use (Session:C1714.storage)
 					Session:C1714.storage.payload:=New shared object:C1526("ID"; $user.UUID; "email"; $user.mail; "role"; $user.role)
 				End use 
-				$privileges:=($user.role="Admin") ? ["organize"; "visit"; "guest"] : ["commercial"; "visit"; "guest"]
+				Case of 
+					: ($user.role="Admin")
+						$privileges:=["organize"; "visit"; "guest"]
+					: ($user.role="Commercial")
+						$privileges:=["commercial"; "visit"; "guest"]
+					: ($user.role="Client")
+						$privileges:=["visit"; "guest"]
+					Else 
+						$privileges:=Null:C1517
+				End case 
 				Session:C1714.setPrivileges($privileges)
 				Web Form:C1735.dialog.hide()
 				return $user

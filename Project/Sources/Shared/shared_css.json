@@ -197,6 +197,12 @@
 			"content": "self span ~span{\n\twhite-space: nowrap;\n    text-overflow: ellipsis;\n    width: 140px; \n    display:block ;\n    overflow: hidden\n}",
 			"parentId": null,
 			"id": "2hzHORzUUBKO4ZgoTTn-H"
+		},
+		{
+			"name": "focusButton",
+			"content": "self {\n\tbackground-color: white !important;\n\t\n\n}",
+			"parentId": null,
+			"id": "U3tYe7EYKeDil0xwnOekf"
 		}
 	]
 }

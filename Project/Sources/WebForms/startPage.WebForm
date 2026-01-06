@@ -50,13 +50,36 @@
 				"id": "jDySPxXNqnBG9SyabSE2Vd",
 				"conditions": {
 					"id": "2TZsqMv9oKSBoaVqoRMXV9",
-					"type": "privilege",
-					"name": "condition",
-					"value": "visit",
-					"valueType": "hardCoded",
-					"path": "",
-					"dsType": "",
-					"op": "eq"
+					"type": "combination",
+					"op": "and",
+					"conditions": [
+						{
+							"id": "nywkbEEmeEeLEiTRFgzNVp",
+							"type": "privilege",
+							"name": "condition",
+							"value": "visit",
+							"valueType": "hardCoded",
+							"path": "",
+							"dsType": "",
+							"op": "eq"
+						},
+						{
+							"id": "9acXaoujbdCbqRc2RzY7hr",
+							"type": "privilege",
+							"name": "condition",
+							"value": "organize",
+							"valueType": "hardCoded",
+							"op": "neq"
+						},
+						{
+							"id": "p7xPGKfWeqJ6WeXCaDwZME",
+							"type": "privilege",
+							"name": "condition",
+							"value": "commercial",
+							"valueType": "hardCoded",
+							"op": "neq"
+						}
+					]
 				}
 			}
 		]

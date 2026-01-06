@@ -33,51 +33,21 @@
 					"conditions": [
 						{
 							"id": "hDsn3FR4DHVNcXusXkNS2g",
-							"type": "combination",
-							"op": "and",
-							"conditions": [
-								{
-									"id": "hMygKLmCqHBwiMi9175aUY",
-									"type": "privilege",
-									"name": "condition",
-									"value": "organize",
-									"valueType": "hardCoded",
-									"path": "Shared:currentUser",
-									"dsType": "entity",
-									"op": "eq"
-								},
-								{
-									"id": "x1XqNkz2pK8Ce6UMJBAyZp",
-									"type": "privilege",
-									"name": "condition",
-									"value": "visit",
-									"valueType": "hardCoded",
-									"op": "eq"
-								}
-							]
+							"type": "privilege",
+							"name": "condition",
+							"value": "organize",
+							"valueType": "hardCoded",
+							"path": "Shared:currentUser",
+							"dsType": "entity",
+							"op": "eq"
 						},
 						{
 							"id": "o4b9ahv5kyHrGtovSrxP4z",
-							"type": "combination",
-							"op": "and",
-							"conditions": [
-								{
-									"id": "gDEjFb8dzeYZ3K8S8syYeW",
-									"type": "privilege",
-									"name": "condition",
-									"value": "commercial",
-									"valueType": "hardCoded",
-									"op": "eq"
-								},
-								{
-									"id": "2QGyfiaCbkdDHyZHBeABRy",
-									"type": "privilege",
-									"name": "condition",
-									"value": "visit",
-									"valueType": "hardCoded",
-									"op": "eq"
-								}
-							]
+							"type": "privilege",
+							"name": "condition",
+							"value": "commercial",
+							"valueType": "hardCoded",
+							"op": "eq"
 						}
 					]
 				}
@@ -91,7 +61,7 @@
 					"op": "and",
 					"conditions": [
 						{
-							"id": "uhMpM6BVZBcB4jmDvgn2bX",
+							"id": "tf1o7ciGjaZBMRki2BtFB3",
 							"type": "privilege",
 							"name": "condition",
 							"value": "visit",
@@ -99,7 +69,7 @@
 							"op": "eq"
 						},
 						{
-							"id": "sqWA9wu1JhoZBn1m89tdFw",
+							"id": "6WAMPexkeG3qVn41hJGogB",
 							"type": "privilege",
 							"name": "condition",
 							"value": "organize",
@@ -107,7 +77,7 @@
 							"op": "neq"
 						},
 						{
-							"id": "uBU3E3KttFnYbubQvgN9uu",
+							"id": "iV8PTR7bzWz1tZ5DMUcjPh",
 							"type": "privilege",
 							"name": "condition",
 							"value": "commercial",

@@ -230,24 +230,7 @@
 				"classNames": [
 					"nav1"
 				],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "kV7UYycxdLRqiQLhq2RFpP",
-						"method": "ds.generateData",
-						"params": [],
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						},
-						"disabled": false,
-						"feedback": true
-					}
-				],
+				"events": [],
 				"style": {
 					"height": "auto",
 					"marginLeft": "0px",

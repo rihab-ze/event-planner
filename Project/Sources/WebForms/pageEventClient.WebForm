@@ -13,14 +13,14 @@
 		"styles": [
 			{
 				"name": "topButton",
-				"content": "self {\nposition: absolute !important;\nbackground-color: #DEE2EC !important;\n}",
+				"content": "self {\nbackground-color: #DEE2EC !important;\n}",
 				"parentId": null,
 				"id": "4SikRtmTF3zABZmmBfte5",
 				"scope": "local"
 			},
 			{
 				"name": "downButton",
-				"content": "self {\nposition: absolute;\nleft: 95px;\ntop: 0 !important;\nbackground-color: #FFFFFF ;\ncolor: #353D66 ;\n}",
+				"content": "self {\nbackground-color: #FFFFFF ;\ncolor: #353D66 ;\n}",
 				"parentId": null,
 				"id": "NPIzX9_yKNhmp8yFSqjed",
 				"scope": "local"
@@ -45,6 +45,13 @@
 				"parentId": null,
 				"id": "LfcVWGWUXcq3zUge5kZjk",
 				"scope": "local"
+			},
+			{
+				"name": "focusButton",
+				"content": "self {\n\tbackground-color: #FFFFFF !important ;\n\tcolor: #353D66 !important;\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "an1xBt7dN67HWERF47gYI"
 			}
 		],
 		"states": [
@@ -79,6 +86,10 @@
 					"dsType": "entity",
 					"op": "notnull"
 				}
+			},
+			{
+				"label": "pastEventPage",
+				"id": "pyohWHBnBXppsqJ886QbJJ"
 			}
 		]
 	},
@@ -391,74 +402,25 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Past",
-				"classNames": [
-					"topButton"
-				],
+				"classNames": [],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "6vFcc2iJiH4MH9ogtwn57p",
 						"events": [
 							"onclick"
 						],
-						"id": "je4kgnPuMgmKZAUwKM12Vv",
-						"method": "ds.setCss",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "past",
-								"id": "fHdM1vtNue4JQhApqSeKP3",
-								"isHardCoded": true,
-								"hardCodedValue": "past"
-							},
-							{
-								"name": "cssClass",
-								"type": "string",
-								"datasource": "",
-								"id": "qo5yZJ4mCNTJSRpLQuHqDk",
-								"isHardCoded": true,
-								"hardCodedValue": "focusButton"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						}
-					},
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "3ssoqDqwd7XGeCHdFMUsBq",
-						"method": "ds.removeCss",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "upcoming",
-								"id": "ijgsPPXP1UcnaCdrGy5oQk",
-								"isHardCoded": true,
-								"hardCodedValue": "upcoming"
-							},
-							{
-								"name": "cssClass",
-								"type": "string",
-								"datasource": "",
-								"id": "cznwLGoK67QPaZuCsPgfFJ",
-								"isHardCoded": true,
-								"hardCodedValue": "focusButton"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
 						},
-						"disabled": false
+						"state": {
+							"action": "add",
+							"states": [
+								"pyohWHBnBXppsqJ886QbJJ"
+							]
+						}
 					},
 					{
 						"type": "method",
@@ -499,40 +461,6 @@
 							"type": "Variable",
 							"datasource": "Shared:events"
 						}
-					},
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "rDPc5nR6NY5bXn7JVKQ9cB",
-						"method": "ds.setCss",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "hiUFRXdiKDYGkgHo76wTSa",
-								"isHardCoded": true,
-								"hardCodedType": "string",
-								"hardCodedValue": ""
-							},
-							{
-								"name": "cssClass",
-								"type": "string",
-								"datasource": "",
-								"id": "8fGLcTKJNm3s8uXtFNgzB2",
-								"isHardCoded": true,
-								"hardCodedType": "string",
-								"hardCodedValue": ""
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "Variable"
-						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -548,12 +476,21 @@
 					"alignItems": "center",
 					"width": "123px",
 					"borderRadius": "20px",
-					"justifyContent": "flex-start"
+					"justifyContent": "flex-start",
+					"position": "absolute"
 				},
 				"serverSideRef": "past"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:pyohWHBnBXppsqJ886QbJJ": {
+					"style": {
+						"backgroundColor": "#ffffffff",
+						"borderWidth": "1px",
+						"borderColor": "#5863F6"
+					}
+				}
+			},
 			"parent": "s4Q1T_MRVN",
 			"hidden": false,
 			"nodes": [],
@@ -585,72 +522,24 @@
 			"isCanvas": false,
 			"props": {
 				"text": "Upcoming",
-				"classNames": [
-					"downButton"
-				],
+				"classNames": [],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "DataStore",
+						"type": "simple-action",
+						"id": "d6oVU7xrpZhdf7wTVPQZoR",
 						"events": [
 							"onclick"
 						],
-						"id": "dJEN94fi45xfzhK6TDWpEp",
-						"method": "ds.setCss",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "upcoming",
-								"id": "jxZ9NFbQQt49SzcHKyKWKg",
-								"isHardCoded": true,
-								"hardCodedValue": "upcoming"
-							},
-							{
-								"name": "cssClass",
-								"type": "string",
-								"datasource": "",
-								"id": "cWPyJ2X3Jr7Lp4o4JQkWRE",
-								"isHardCoded": true,
-								"hardCodedValue": "focusButton"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						}
-					},
-					{
-						"type": "method",
-						"dataclass": "DataStore",
-						"events": [
-							"onclick"
-						],
-						"id": "542iz8NHmGugDYrErMwvts",
-						"method": "ds.removeCss",
-						"params": [
-							{
-								"name": "serverRef",
-								"type": "string",
-								"datasource": "",
-								"id": "enwrQYDjFxGWJfrkrSgEiu",
-								"isHardCoded": true,
-								"hardCodedValue": "past"
-							},
-							{
-								"name": "cssClass",
-								"type": "string",
-								"datasource": "topButton",
-								"id": "j3tmkrcjTgg523GbomtKv3",
-								"isHardCoded": true,
-								"hardCodedValue": "focusButton"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
+						"action": "",
+						"actionType": "state",
+						"datasource": {
+							"name": ""
+						},
+						"state": {
+							"action": "delete",
+							"states": [
+								"pyohWHBnBXppsqJ886QbJJ"
+							]
 						}
 					},
 					{
@@ -707,12 +596,24 @@
 					"borderRadius": "20px",
 					"borderWidth": "1px",
 					"borderColor": "#5863F6",
-					"justifyContent": "center"
+					"justifyContent": "center",
+					"position": "absolute",
+					"left": "95px",
+					"backgroundColor": "#ffffffff",
+					"color": "#353D66"
 				},
 				"serverSideRef": "upcoming"
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:pyohWHBnBXppsqJ886QbJJ": {
+					"style": {
+						"backgroundColor": "#DEE2EC",
+						"borderColor": "",
+						"borderWidth": ""
+					}
+				}
+			},
 			"parent": "s4Q1T_MRVN",
 			"hidden": false,
 			"nodes": [],
