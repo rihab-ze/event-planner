@@ -137,7 +137,7 @@ Function _completeImpliciteOperator()
 				This:C1470._pushANDOperator()
 				$nbParentheses+=1
 			: ($part.type="parenthesis") & ($part.value="(")
-				nbParentheses+=1
+				$nbParentheses+=1
 			: ($part.type="parenthesis") & ($part.value=")")
 				$nbParentheses-=1
 		End case 
@@ -198,13 +198,13 @@ Function _buildQueryString()
 				For each ($field; $searchFields)
 					$subQueryStringPart:=""
 					$valueToSearch:="@"+$part.value+"@"
-					If (Field:C253.placeHolder#Null:C1517)
-						$parameterName:=Field:C253.placeHolder+String:C10($partIndice)
-						$subQueryStringPart+=Field:C253.path+" = :"+$parameterName
+					If ($field.placeHolder#Null:C1517)
+						$parameterName:=$field.placeHolder+String:C10($partIndice)
+						$subQueryStringPart+=$field.path+" = :"+$parameterName
 						This:C1470.querySettings.parameters[$parameterName]:=$valueToSearch
 					Else 
-						$parameterName:=Field:C253.attribute+String:C10($partIndice)
-						$subQueryStringPart+=Field:C253.attribute+" = :"+$parameterName
+						$parameterName:=$field.attribute+String:C10($partIndice)
+						$subQueryStringPart+=$field.attribute+" = :"+$parameterName
 						This:C1470.querySettings.parameters[$parameterName]:=$valueToSearch
 					End if 
 					$subQueryStringParts.push($subQueryStringPart)

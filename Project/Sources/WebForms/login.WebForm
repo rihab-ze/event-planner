@@ -573,7 +573,8 @@
 							"name": "result",
 							"type": "cs.EmployeeEntity",
 							"datasource": "Shared:currentUser"
-						}
+						},
+						"feedback": true
 					}
 				],
 				"iconPosition": "hidden",

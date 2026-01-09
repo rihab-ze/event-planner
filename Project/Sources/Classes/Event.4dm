@@ -18,7 +18,7 @@ exposed Function search($search : Variant; $eventSelection : Variant) : cs:C1710
 		
 		If ($eventSelection="mine")
 			$searchTag:="actor:"+$currentUser.firstName+" or speaker:"+$currentUser.firstName+" or attendee:"+$currentUser.firstName+" or technician:"+$currentUser.firstName+")"
-			$search:=$search+" ( "+$searchTag
+			$search:=$search+" ( "+$searchTag+" )"
 		End if 
 		$entry:={dataclass: cs:C1710.Event; searchField: []; orderByDefault: "name"}
 		$entry.searchField:=[]
