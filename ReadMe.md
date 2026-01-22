@@ -68,6 +68,4 @@ If you want to change the behavior or appearance of a specific feature, edit the
 - Companies and Employees
   - Server: `Project/Sources/Classes/Company.4dm`, `Employee.4dm`, etc.
 
-- Sponsors, Stands, Technicians, Equipment
-  - Server: Corresponding class files in `Project/Sources/Classes/`.
 
