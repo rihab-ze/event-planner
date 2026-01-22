@@ -45,7 +45,10 @@ This application serves as a complete event management platform allowing users t
 ## Test accounts and sample data
 
 - The app includes a data generator `Project/Sources/Methods/generateData.4dm` which creates sample events, users, companies, etc. You can call it from the UI or run `ds.generateData()` in the server console.
-
+- To test the login, you can use the following credentials:
+    - Email: john.smith@example.com
+    - Password: a1b2c3
+    
 ## Where to find the code for each feature
 
 If you want to change the behavior or appearance of a specific feature, edit the files listed below.
