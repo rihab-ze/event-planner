@@ -32,7 +32,7 @@ This application serves as a complete event management platform allowing users t
 ## 🚀 How to run
 
 ### Pre-requisites (4D Software):
-- Download the latest Release version of 4D: [Product Download](https://us.4d.com/product-download/Feature-Release)
+- Download the 4D version 21 LTS or later (the minimum required version 4D 21 LTS): [Product Download](https://us.4d.com/product-download/4D-21-LTS)
 - Or the latest Beta version: [Beta Program](https://discuss.4d.com/)
 - Follow activation steps: [Installation Guide](https://developer.4d.com/docs/GettingStarted/installation)
 
