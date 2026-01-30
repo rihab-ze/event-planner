@@ -43,3 +43,7 @@
 *.4lb               binary    linguist-language=4d
 *.4qr               binary    linguist-language=4d
 *.dylib              binary 
+*.js linguist-vendored
+*.ts linguist-vendored
+*.jsx linguist-vendored
+*.tsx linguist-vendored
