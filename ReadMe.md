@@ -1,5 +1,4 @@
 # Event Manager Application
-
 This demo app is built with 4D Qodly Pro and is meant to inspire you or help you kickstart your own project.
 
 ## 🎯 Purpose of the Application
