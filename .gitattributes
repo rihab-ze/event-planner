@@ -2,7 +2,7 @@
 # Basic .gitattributes for a 4D repo.
 # ====================================================================
 
-#  * text=auto
+* text=auto
 
 #  *.shtml -crlf
 
